@@ -1,20 +1,32 @@
 import { Card } from './ui/card';
 import { Market } from '../types/market';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, ArrowLeft } from 'lucide-react';
 
 interface MarketSelectionProps {
   markets: Market[];
   onSelectMarket: (marketId: string) => void;
+  onBack: () => void;
 }
 
-export function MarketSelection({ markets, onSelectMarket }: MarketSelectionProps) {
+export function MarketSelection({ markets, onSelectMarket, onBack }: MarketSelectionProps) {
   return (
     <div className="min-h-screen bg-[#0A0A0A] p-4 relative">
       {/* Art Deco Header Border */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
       
       <div className="max-w-lg mx-auto relative">
-        <div className="pt-8 pb-4">
+        <div className="pt-4 pb-4">
+          <button
+            onClick={onBack}
+            className="relative z-10 p-2 flex items-center text-[#B8A882] active:text-[#D4AF37] transition-colors touch-manipulation"
+          >
+            <div className="w-8 h-8 border-2 border-[#D4AF37]/50 flex items-center justify-center mr-3">
+              <ArrowLeft className="w-4 h-4" />
+            </div>
+            <span className="tracking-wider">뒤로가기</span>
+          </button>
+
+          <div className="pt-4">
           <div className="text-center mb-6">
             <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-3" />
             <h2 className="text-[#F5F5DC] tracking-wider">시장을 선택하세요</h2>
@@ -58,6 +70,7 @@ export function MarketSelection({ markets, onSelectMarket }: MarketSelectionProp
                 </Card>
               </div>
             ))}
+          </div>
           </div>
         </div>
       </div>

@@ -49,6 +49,14 @@ export default function App() {
     setCurrentScreen('menu-detail');
   };
 
+  const handleBackToMain = () => {
+    setCurrentScreen('main');
+  };
+
+  const handleBackToMarkets = () => {
+    setCurrentScreen('markets');
+  };
+
   return (
     <div className="dark antialiased">
       <style dangerouslySetInnerHTML={{
@@ -70,6 +78,7 @@ export default function App() {
         <MarketSelection 
           markets={markets}
           onSelectMarket={handleSelectMarket}
+          onBack={handleBackToMain}
         />
       )}
       
@@ -78,6 +87,7 @@ export default function App() {
           marketName={selectedMarket.name}
           menuItems={selectedMarket.menuItems}
           onSelectMenu={handleSelectMenu}
+          onBack={handleBackToMarkets}
         />
       )}
       

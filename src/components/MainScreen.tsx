@@ -67,6 +67,22 @@ export function MainScreen({ onStartOrder }: MainScreenProps) {
         >
           <span className="relative z-10 tracking-widest">주문하기</span>
         </Button>
+        
+        {/* 문의 정보 섹션 */}
+        <div className="relative z-10 mt-4 text-left text-sm text-[#B8A882] max-w-sm mx-auto px-3">
+          <div className="p-3 border-2 border-[#D4AF37]/20 bg-[#0A0A0A]/60 rounded">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-[#F5F5DC] tracking-wider">문의/도움말</p>
+                <p className="mt-1 text-[#B8A882]">전화: <a href="tel:+821012345678" className="text-[#D4AF37]">010-1234-5678</a></p>
+                <p className="mt-1 text-[#B8A882]">이메일: <a href="mailto:help@example.com" className="text-[#D4AF37]">help@example.com</a></p>
+              </div>
+              <div className="text-right text-xs text-[#B8A882]">
+                <p>운영: 평일 09:00–18:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

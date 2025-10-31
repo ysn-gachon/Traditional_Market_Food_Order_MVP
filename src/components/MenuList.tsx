@@ -1,20 +1,31 @@
 import { Card } from './ui/card';
 import { MenuItem } from '../types/market';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ArrowLeft } from 'lucide-react';
 
 interface MenuListProps {
   marketName: string;
   menuItems: MenuItem[];
   onSelectMenu: (menuId: string) => void;
+  onBack: () => void;
 }
 
-export function MenuList({ marketName, menuItems, onSelectMenu }: MenuListProps) {
+export function MenuList({ marketName, menuItems, onSelectMenu, onBack }: MenuListProps) {
   return (
     <div className="min-h-screen bg-[#0A0A0A] p-4 relative pb-6">
       {/* Art Deco Header Border */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent" />
       
       <div className="max-w-lg mx-auto relative pt-8">
+        <button
+          onClick={onBack}
+          className="relative z-10 p-2 flex items-center text-[#B8A882] active:text-[#D4AF37] transition-colors touch-manipulation mb-2"
+        >
+          <div className="w-8 h-8 border-2 border-[#D4AF37]/50 flex items-center justify-center mr-3">
+            <ArrowLeft className="w-4 h-4" />
+          </div>
+          <span className="tracking-wider">뒤로가기</span>
+        </button>
         <div className="text-center mb-6">
           <div className="w-20 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-3" />
           <h2 className="text-[#F5F5DC] tracking-wider">{marketName}</h2>

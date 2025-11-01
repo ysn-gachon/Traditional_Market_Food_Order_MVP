@@ -119,7 +119,7 @@ export function PaymentForm({ onBack }: PaymentFormProps) {
                 <h3 className="text-[#F5F5DC] tracking-wider">입금 계좌</h3>
               </div>
               <p className="text-[#D4AF37] tracking-wider break-all">{accountNumber}</p>
-              <p className="text-[#B8A882] mt-1">예금주: 김현도로</p>
+              <p className="text-[#B8A882] mt-1">예금주: 김현도</p>
             </div>
             
             <Button

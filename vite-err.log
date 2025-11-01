@@ -7024,3 +7024,192 @@
 2025-11-01T08:30:40.046Z vite:time [32m0.58ms[39m [2m/src/lib/supabaseClient.ts[22m
 2025-11-01T08:30:40.047Z vite:cache [memory] [2m/src/components/ui/utils.ts[22m
 2025-11-01T08:30:40.048Z vite:time [32m0.51ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:30:49.569Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:30:49.574Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:30:49.574Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:12.551Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:31:12.551Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:12.552Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:14.512Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:31:14.512Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:14.513Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:29.913Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:31:29.914Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:29.914Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:45.740Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:31:45.741Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:45.743Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:50.889Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:31:50.889Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:50.890Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:53.434Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:31:53.434Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:53.434Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:54.527Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:31:54.528Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:54.529Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:55.671Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:31:55.672Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:55.672Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:56.581Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:31:56.582Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:31:56.582Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:34.765Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:34.766Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:34.766Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:39.619Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:39.628Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:39.628Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:39.876Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:39.885Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:39.885Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:40.268Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:40.278Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:40.279Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:40.565Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:40.574Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:40.574Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:40.861Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:40.870Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:40.870Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:41.140Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:41.150Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:41.151Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:41.433Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:41.442Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:41.442Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:41.721Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:41.730Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:41.731Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:42.000Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:42.009Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:42.010Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:42.296Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:42.305Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:42.306Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:42.564Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:42.574Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:42.575Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:42.842Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:42.851Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:42.851Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:43.140Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:43.142Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:43.142Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:43.410Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:43.419Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:43.419Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:43.692Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:43.701Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:43.702Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:43.963Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:43.973Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:43.973Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:44.246Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:44.255Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:44.255Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:44.530Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:44.539Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:44.539Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:44.833Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:44.834Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:44.834Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:45.102Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:45.111Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:45.111Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:45.363Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:45.372Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:45.373Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:45.644Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:45.648Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:45.648Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:45.922Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:45.931Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:45.931Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:46.202Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:46.211Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:46.211Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:46.485Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:46.495Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:46.495Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:46.757Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:46.766Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:46.766Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:47.025Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:47.025Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:47.026Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:47.299Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:47.309Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:47.309Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:47.609Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:47.618Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:47.619Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:47.884Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:47.892Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:47.893Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:48.154Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:48.163Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:48.163Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:48.431Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:48.440Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:48.441Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:48.727Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:48.736Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:48.736Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:48.999Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:49.008Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:49.008Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:49.264Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:49.274Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:49.275Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:49.535Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:49.544Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:49.544Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:49.815Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:49.825Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:49.825Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:50.091Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:50.099Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:50.099Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:50.366Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:50.375Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:50.375Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:50.644Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:50.645Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:50.645Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:50.947Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:50.957Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:50.958Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:51.216Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:51.225Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:51.226Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:51.493Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:51.502Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:51.502Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:51.787Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:51.788Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:51.788Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:52.073Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:52.082Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:52.082Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:52.354Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:52.364Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:52.364Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:52.685Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:52.694Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:52.694Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:52.974Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:52.976Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:52.976Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:53.253Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:53.254Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:53.254Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:53.520Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:53.521Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:53.521Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:53.805Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:53.806Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:53.806Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:54.103Z vite:hmr [file change] [2mvite-err.log[22m
+2025-11-01T08:32:54.114Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:32:54.115Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m

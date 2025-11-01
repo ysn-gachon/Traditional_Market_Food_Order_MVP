@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MainScreen } from './components/MainScreen';
 import { MarketSelection } from './components/MarketSelection';
 import { MenuList } from './components/MenuList';
 import { MenuDetail } from './components/MenuDetail';
 import { PaymentForm } from './components/PaymentForm';
-import { markets } from './data/markets';
-import { MenuItem } from './types/market';
+import type { MenuItem, Market } from './types/market';
+import { fetchMarketsFromSupabase } from './services/marketService';
 
 type Screen = 'main' | 'markets' | 'menu-list' | 'menu-detail' | 'payment';
 
@@ -13,14 +13,37 @@ export default function App() {
   const [currentScreen, setCurrentScreen] = useState<Screen>('main');
   const [selectedMarketId, setSelectedMarketId] = useState<string | null>(null);
   const [selectedMenuItem, setSelectedMenuItem] = useState<MenuItem | null>(null);
+  const [markets, setMarkets] = useState<Market[] | null>(null);
+  const [loadingMarkets, setLoadingMarkets] = useState(false);
 
-  const selectedMarket = selectedMarketId 
-    ? markets.find(m => m.id === selectedMarketId) 
+  const selectedMarket = selectedMarketId && markets
+    ? markets.find(m => m.id === selectedMarketId) || null
     : null;
 
   const handleStartOrder = () => {
     setCurrentScreen('markets');
   };
+
+  useEffect(() => {
+    // Fetch markets from Supabase (read-only) when app starts
+    let mounted = true;
+    (async () => {
+      try {
+        setLoadingMarkets(true);
+        const ms = await fetchMarketsFromSupabase();
+        if (mounted) setMarkets(ms);
+      } catch (e) {
+        // eslint-disable-next-line no-console
+        console.error('Failed to fetch markets from Supabase', e);
+      } finally {
+        setLoadingMarkets(false);
+      }
+    })();
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   const handleSelectMarket = (marketId: string) => {
     setSelectedMarketId(marketId);
@@ -76,7 +99,7 @@ export default function App() {
       
       {currentScreen === 'markets' && (
         <MarketSelection 
-          markets={markets}
+          markets={markets ?? []}
           onSelectMarket={handleSelectMarket}
           onBack={handleBackToMain}
         />

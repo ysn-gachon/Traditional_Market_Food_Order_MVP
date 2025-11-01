@@ -2,14 +2,17 @@ import { Button } from './ui/button';
 import { MenuItem } from '../types/market';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { ArrowLeft } from 'lucide-react';
+import { useState } from 'react';
+import { useCart } from '../contexts/CartContext';
 
 interface MenuDetailProps {
   menuItem: MenuItem;
-  onPayment: () => void;
   onBack: () => void;
 }
 
-export function MenuDetail({ menuItem, onPayment, onBack }: MenuDetailProps) {
+export function MenuDetail({ menuItem, onBack }: MenuDetailProps) {
+  const { addItem } = useCart();
+  const [quantity, setQuantity] = useState<number>(1);
   return (
     <div className="min-h-screen bg-[#0A0A0A] relative">
       {/* Art Deco Header Border */}
@@ -84,13 +87,33 @@ export function MenuDetail({ menuItem, onPayment, onBack }: MenuDetailProps) {
               <div className="absolute -bottom-2 -left-2 w-5 h-5 border-b-2 border-l-2 border-[#D4AF37]/30" />
               <div className="absolute -bottom-2 -right-2 w-5 h-5 border-b-2 border-r-2 border-[#D4AF37]/30" />
               
-              <Button
-                onClick={onPayment}
-                className="w-full bg-[#D4AF37] active:bg-[#FFD700] text-[#0A0A0A] py-7 border-2 border-[#D4AF37] transition-all duration-200 touch-manipulation"
-                size="lg"
-              >
-                <span className="relative z-10 tracking-widest">결제하기</span>
-              </Button>
+              <div className="mb-4 flex items-center gap-3">
+                <div className="flex items-center bg-[#0F0F0F] border-2 border-[#D4AF37]/30 rounded">
+                  <button
+                    onClick={() => setQuantity(q => Math.max(1, q - 1))}
+                    className="px-4 py-3 text-[#B8A882]"
+                    aria-label="감소"
+                  >-</button>
+                  <div className="px-6 py-3 text-[#F5F5DC]">{quantity}</div>
+                  <button
+                    onClick={() => setQuantity(q => q + 1)}
+                    className="px-4 py-3 text-[#B8A882]"
+                    aria-label="증가"
+                  >+</button>
+                </div>
+              </div>
+
+              <div className="relative">
+                <Button
+                  onClick={() => {
+                    addItem(menuItem, quantity);
+                  }}
+                  className="w-full bg-[#D4AF37] active:bg-[#FFD700] text-[#0A0A0A] py-4 border-2 border-[#D4AF37] transition-all duration-200 touch-manipulation"
+                  size="lg"
+                >
+                  <span className="relative z-10 tracking-widest">장바구니에 담기</span>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

@@ -4,26 +4,66 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Textarea } from './ui/textarea';
 import { Card } from './ui/card';
-import { MenuItem } from '../types/market';
-import { ArrowLeft, CheckCircle } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Trash2 } from 'lucide-react';
+import { useCart } from '../contexts/CartContext';
 
 interface PaymentFormProps {
-  menuItem: MenuItem;
   onBack: () => void;
 }
 
-export function PaymentForm({ menuItem, onBack }: PaymentFormProps) {
+export function PaymentForm({ onBack }: PaymentFormProps) {
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [createdOrderId, setCreatedOrderId] = useState<number | null>(null);
+  const { items, subtotal, MIN_ORDER, clear, updateQuantity, removeItem } = useCart();
 
   const accountNumber = '국민은행 123-456-789012';
   const operatorPhone = '010-9876-5432';
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (phone && address) {
+    setErrorMessage(null);
+    if (!phone || !address) return setErrorMessage('전화번호와 주소를 입력해주세요.');
+    if (subtotal < MIN_ORDER) return setErrorMessage('최소 주문금액을 채워주세요.');
+    if (items.length === 0) return setErrorMessage('장바구니에 상품이 없습니다.');
+
+    setIsSubmitting(true);
+
+    try {
+      const payload = {
+        cust_phone: phone,
+        cust_address: address,
+        items: items.map(({ item, quantity }) => ({
+          menu_id: Number(item.id),
+          quantity,
+          unit_price: item.price
+        }))
+      };
+
+      const resp = await fetch('/api/create-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await resp.json();
+      if (!resp.ok) {
+        setErrorMessage(data?.error || '주문 생성에 실패했습니다.');
+        setIsSubmitting(false);
+        return;
+      }
+
+      // success
+      setCreatedOrderId(data.order_id ?? null);
       setIsSubmitted(true);
+      clear();
+    } catch (err: any) {
+      setErrorMessage(String(err?.message || err));
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -39,7 +79,7 @@ export function PaymentForm({ menuItem, onBack }: PaymentFormProps) {
         <div className="absolute bottom-6 left-6 w-16 h-16 border-b-2 border-l-2 border-[#D4AF37]/30" />
         <div className="absolute bottom-6 right-6 w-16 h-16 border-b-2 border-r-2 border-[#D4AF37]/30" />
         
-        <div className="max-w-sm w-full space-y-4">
+  <div className="max-w-sm w-full space-y-4">
           <Card className="p-6 text-center bg-[#1A1A1A] border-2 border-[#D4AF37] relative">
             {/* Corner decorations - Smaller */}
             <div className="absolute top-1 left-1 w-6 h-6 border-t border-l border-[#D4AF37]/50" />
@@ -57,6 +97,9 @@ export function PaymentForm({ menuItem, onBack }: PaymentFormProps) {
             
             <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto mb-3" />
             <h2 className="text-[#F5F5DC] mb-2 tracking-wider">주문이 접수되었습니다!</h2>
+            {createdOrderId && (
+              <p className="text-[#B8A882] mb-2">주문번호: <span className="text-[#D4AF37]">{createdOrderId}</span></p>
+            )}
             <div className="w-12 h-px bg-[#D4AF37]/50 mx-auto my-3" />
             <p className="text-[#B8A882] mb-6 leading-relaxed">
               입금 확인 후 조리가 시작됩니다.
@@ -147,12 +190,51 @@ export function PaymentForm({ menuItem, onBack }: PaymentFormProps) {
                 <div className="w-2 h-2 bg-[#D4AF37] rotate-45" />
                 <h3 className="text-[#F5F5DC] tracking-wider">주문 메뉴</h3>
               </div>
-              <div className="pl-3 border-l-2 border-[#D4AF37]/30">
-                <p className="text-[#F5F5DC]">{menuItem.name}</p>
-                <p className="text-[#B8A882] mt-1">{menuItem.store}</p>
-                <p className="text-[#D4AF37] mt-2 tracking-wider">
-                  {menuItem.price.toLocaleString()}원
-                </p>
+              <div className="pl-3 border-l-2 border-[#D4AF37]/30 space-y-2">
+                {items.length === 0 ? (
+                  <p className="text-[#B8A882]">장바구니에 상품이 없습니다.</p>
+                ) : (
+                  items.map(({ item, quantity }) => (
+                    <div key={item.id} className="flex items-center justify-between gap-3 py-2">
+                      <div>
+                        <p className="text-[#F5F5DC]">{item.name}</p>
+                        <p className="text-[#B8A882] text-sm">{item.store}</p>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="flex items-center bg-[#0F0F0F] border-2 border-[#D4AF37]/30 rounded">
+                          <button
+                            type="button"
+                            onClick={() => updateQuantity(item.id, Math.max(1, quantity - 1))}
+                            className="px-3 py-2 text-[#B8A882]"
+                            aria-label={`감소 ${item.name}`}
+                          >
+                            -
+                          </button>
+                          <div className="px-4 py-2 text-[#F5F5DC]">{quantity}</div>
+                          <button
+                            type="button"
+                            onClick={() => updateQuantity(item.id, quantity + 1)}
+                            className="px-3 py-2 text-[#B8A882]"
+                            aria-label={`증가 ${item.name}`}
+                          >
+                            +
+                          </button>
+                        </div>
+
+                        <div className="text-[#D4AF37] w-28 text-right">{(item.price * quantity).toLocaleString()}원</div>
+
+                        <button
+                          type="button"
+                          onClick={() => removeItem(item.id)}
+                          className="text-sm text-[#FF6B6B] flex items-center gap-2"
+                          aria-label={`삭제 ${item.name}`}
+                        >
+                          <Trash2 className="w-4 h-4" /> 삭제
+                        </button>
+                      </div>
+                    </div>
+                  ))
+                )}
               </div>
             </Card>
             
@@ -207,13 +289,24 @@ export function PaymentForm({ menuItem, onBack }: PaymentFormProps) {
                 <div className="absolute -bottom-2 -left-2 w-5 h-5 border-b-2 border-l-2 border-[#D4AF37]/30" />
                 <div className="absolute -bottom-2 -right-2 w-5 h-5 border-b-2 border-r-2 border-[#D4AF37]/30" />
                 
+                <div className="mb-3 flex items-center justify-between text-[#B8A882]">
+                  <div className="text-sm">총 합계: <span className="text-[#D4AF37]">{subtotal.toLocaleString()}원</span></div>
+                  <div className="text-sm text-right">최소 주문금액: <span className="text-[#D4AF37]">{MIN_ORDER.toLocaleString()}원</span></div>
+                </div>
                 <Button
                   type="submit"
-                  className="w-full bg-[#D4AF37] active:bg-[#FFD700] text-[#0A0A0A] py-7 border-2 border-[#D4AF37] transition-all duration-200 touch-manipulation"
+                  disabled={isSubmitting || subtotal < MIN_ORDER || items.length === 0}
+                  className="w-full bg-[#D4AF37] active:bg-[#FFD700] text-[#0A0A0A] py-7 border-2 border-[#D4AF37] transition-all duration-200 touch-manipulation disabled:opacity-50"
                   size="lg"
                 >
                   <span className="relative z-10 tracking-widest">주문 완료</span>
                 </Button>
+                {subtotal < MIN_ORDER && (
+                  <p className="mt-2 text-sm text-[#B8A882]">최소주문금액 {MIN_ORDER.toLocaleString()}원입니다. { (MIN_ORDER - subtotal) > 0 ? `${(MIN_ORDER - subtotal).toLocaleString()}원 더 담아주세요.` : '' }</p>
+                )}
+                {errorMessage && (
+                  <p className="mt-2 text-sm text-[#FF6B6B]">{errorMessage}</p>
+                )}
               </div>
             </form>
           </div>

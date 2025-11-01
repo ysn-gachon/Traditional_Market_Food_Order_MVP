@@ -6,6 +6,8 @@ import { MenuDetail } from './components/MenuDetail';
 import { PaymentForm } from './components/PaymentForm';
 import type { MenuItem, Market } from './types/market';
 import { fetchMarketsFromSupabase } from './services/marketService';
+import { CartProvider, useCart } from './contexts/CartContext';
+import { Analytics } from "@vercel/analytics/next"
 
 type Screen = 'main' | 'markets' | 'menu-list' | 'menu-detail' | 'payment';
 
@@ -81,7 +83,8 @@ export default function App() {
   };
 
   return (
-    <div className="dark antialiased">
+    <CartProvider>
+      <div className="dark antialiased">
       <style dangerouslySetInnerHTML={{
         __html: `
           * {
@@ -117,17 +120,36 @@ export default function App() {
       {currentScreen === 'menu-detail' && selectedMenuItem && (
         <MenuDetail
           menuItem={selectedMenuItem}
-          onPayment={handlePayment}
           onBack={handleBackToMenuList}
         />
       )}
       
-      {currentScreen === 'payment' && selectedMenuItem && (
+      {currentScreen === 'payment' && (
         <PaymentForm
-          menuItem={selectedMenuItem}
-          onBack={handleBackToMenuDetail}
+          onBack={handleBackToMenuList}
         />
       )}
+
+      {/* Floating cart button */}
+      <CartFloatingButton onOpenCart={() => setCurrentScreen('payment')} />
     </div>
+    </CartProvider>
+  );
+}
+
+function CartFloatingButton({ onOpenCart }: { onOpenCart: () => void }) {
+  const { totalQuantity } = useCart();
+  if (totalQuantity === 0) return null;
+
+  return (
+    <button
+      onClick={onOpenCart}
+      aria-label="장바구니 열기"
+      // inline style to ensure fixed positioning above other layout quirks
+      style={{ position: 'fixed', top: 12, right: 12 }}
+      className="z-50 bg-[#D4AF37] text-[#0A0A0A] px-4 py-3 rounded-full shadow-lg border-2 border-[#D4AF37]"
+    >
+      장바구니 ({totalQuantity})
+    </button>
   );
 }

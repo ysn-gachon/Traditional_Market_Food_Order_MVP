@@ -5,8 +5,9 @@
 
   export default defineConfig({
     plugins: [react()],
-    // Treat .html as assets to avoid import-analysis complaining in some environments
-    assetsInclude: ['**/*.html'],
+  // NOTE: do NOT treat project HTML as assets (this caused index.html to be emitted
+  // as an asset and replaced the root HTML with a JS export string). Keep HTML
+  // as normal files so Vite emits a proper `index.html` in the build output.
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {

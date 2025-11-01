@@ -5,6 +5,8 @@
 
   export default defineConfig({
     plugins: [react()],
+    // Treat .html as assets to avoid import-analysis complaining in some environments
+    assetsInclude: ['**/*.html'],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
@@ -56,5 +58,9 @@
     server: {
       port: 3000,
       open: true,
+      // Ignore transient log files so Vite doesn't constantly HMR on them
+      watch: {
+        ignored: ['**/*.log', '**/vite-*.log']
+      }
     },
   });

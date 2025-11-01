@@ -74,12 +74,11 @@ export function MainScreen({ onStartOrder }: MainScreenProps) {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-[#F5F5DC] tracking-wider">문의/도움말</p>
-                <p className="mt-1 text-[#B8A882]">전화: <a href="tel:+821012345678" className="text-[#D4AF37]">010-1234-5678</a></p>
-                <p className="mt-1 text-[#B8A882]">이메일: <a href="mailto:help@example.com" className="text-[#D4AF37]">help@example.com</a></p>
+                <p className="mt-1 text-[#B8A882]">전화: <a href="tel:+821073843271" className="text-[#D4AF37]">010-7384-3271</a></p>
+                <p className="mt-1 text-[#B8A882]">인스타그램: <a href="https://instagram.com/b.u.d_official" target="_blank" rel="noreferrer" className="text-[#D4AF37]">@b.u.d_official</a></p>
+                <p className="mt-1 text-[#B8A882]">전자우편: <a href="mailto:budofficial07@gmail.com" className="text-[#D4AF37]">budofficial07@gmail.com</a></p>
               </div>
-              <div className="text-right text-xs text-[#B8A882]">
-                <p>운영: 평일 09:00–18:00</p>
-              </div>
+              
             </div>
           </div>
         </div>

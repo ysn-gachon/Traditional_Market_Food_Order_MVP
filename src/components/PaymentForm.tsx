@@ -20,8 +20,8 @@ export function PaymentForm({ onBack }: PaymentFormProps) {
   const [createdOrderId, setCreatedOrderId] = useState<number | null>(null);
   const { items, subtotal, MIN_ORDER, clear, updateQuantity, removeItem } = useCart();
 
-  const accountNumber = '국민은행 123-456-789012';
-  const operatorPhone = '010-9876-5432';
+  const accountNumber = '토스뱅크 1000-4346-1571';
+  const operatorPhone = '010-7384-3271';
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -119,7 +119,7 @@ export function PaymentForm({ onBack }: PaymentFormProps) {
                 <h3 className="text-[#F5F5DC] tracking-wider">입금 계좌</h3>
               </div>
               <p className="text-[#D4AF37] tracking-wider break-all">{accountNumber}</p>
-              <p className="text-[#B8A882] mt-1">예금주: 전통시장협회</p>
+              <p className="text-[#B8A882] mt-1">예금주: 김현도로</p>
             </div>
             
             <Button
@@ -139,16 +139,20 @@ export function PaymentForm({ onBack }: PaymentFormProps) {
             
             <div className="flex items-center gap-2 mb-3">
               <div className="w-2 h-2 bg-[#D4AF37] rotate-45" />
-              <h3 className="text-[#F5F5DC] tracking-wider">문의 / 운영</h3>
+              <h3 className="text-[#F5F5DC] tracking-wider">문의</h3>
             </div>
-            <div className="pl-3 border-l-2 border-[#D4AF37]/30">
-              <p className="text-[#B8A882] mb-1">운영자 전화번호</p>
-              <a 
+            <div className="pl-3 border-l-2 border-[#D4AF37]/30 space-y-1">
+              <p className="text-[#B8A882] mb-1">전화</p>
+              <a
                 href={`tel:${operatorPhone}`}
-                className="text-[#D4AF37] tracking-wider hover:text-[#FFD700] transition-colors"
+                className="text-[#D4AF37] tracking-wider hover:text-[#FFD700] transition-colors block"
               >
                 {operatorPhone}
               </a>
+              <p className="text-[#B8A882] mb-1">인스타그램</p>
+              <a href="https://instagram.com/b.u.d_official" target="_blank" rel="noreferrer" className="text-[#D4AF37] tracking-wider hover:text-[#FFD700] transition-colors block">@b.u.d_official</a>
+              <p className="text-[#B8A882] mb-1">전자우편</p>
+              <a href="mailto:budofficial07@gmail.com" className="text-[#D4AF37] tracking-wider hover:text-[#FFD700] transition-colors block">budofficial07@gmail.com</a>
             </div>
           </Card>
         </div>
@@ -251,7 +255,7 @@ export function PaymentForm({ onBack }: PaymentFormProps) {
               <div className="pl-3 border-l-2 border-[#D4AF37]">
                 <p className="text-[#D4AF37] tracking-wider break-all">{accountNumber}</p>
                 <p className="text-[#B8A882] mt-1">
-                  예금주: 전통시장협회
+                  예금주: 김현도로
                 </p>
               </div>
             </Card>
@@ -262,7 +266,7 @@ export function PaymentForm({ onBack }: PaymentFormProps) {
                 <Input
                   id="phone"
                   type="tel"
-                  placeholder="010-1234-5678"
+                  placeholder="010-7384-3271"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   required

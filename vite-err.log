@@ -7213,3 +7213,1698 @@
 2025-11-01T08:32:54.103Z vite:hmr [file change] [2mvite-err.log[22m
 2025-11-01T08:32:54.114Z vite:hmr (client) [no modules matched] [2mvite-err.log[22m
 2025-11-01T08:32:54.115Z vite:hmr (ssr) [no modules matched] [2mvite-err.log[22m
+2025-11-01T08:33:33.891Z vite:hmr [config change] [2mvite.config.ts[22m
+2025-11-01T08:33:33.920Z vite:config config file loaded in 27.63ms
+2025-11-01T08:33:33.922Z vite:env loading env files: [
+  'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/.env',
+  'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/.env.local',
+  'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/.env.development',
+  'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/.env.development.local'
+]
+2025-11-01T08:33:33.924Z vite:env env files loaded in 2.05ms
+2025-11-01T08:33:33.926Z vite:env using resolved env: {
+  VITE_SUPABASE_URL: 'https://eoxzechvujcmbtsxintt.supabase.co',
+  VITE_SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVveHplY2h2dWpjbWJ0c3hpbnR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4OTY0NTcsImV4cCI6MjA3NzQ3MjQ1N30.jwm3fFn2CfWF6JX4E-pcncpTDgeaLRLu3OoZCgbT_pg'
+}
+2025-11-01T08:33:33.939Z vite:config using resolved config: {
+  plugins: [
+    'vite:optimized-deps',
+    'vite:watch-package-data',
+    'vite:pre-alias',
+    'alias',
+    'vite:react-swc:resolve-runtime',
+    'vite:modulepreload-polyfill',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    'vite:react-swc',
+    'vite:wasm-fallback',
+    'vite:define',
+    'vite:css-post',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'vite:client-inject',
+    'vite:css-analysis',
+    'vite:import-analysis'
+  ],
+  assetsInclude: [Function: assetsInclude],
+  resolve: {
+    externalConditions: [ 'node' ],
+    extensions: [ '.js', '.jsx', '.ts', '.tsx', '.json' ],
+    dedupe: [],
+    noExternal: [],
+    external: [],
+    preserveSymlinks: false,
+    alias: [
+      { find: 'vaul@1.1.2', replacement: 'vaul' },
+      { find: 'sonner@2.0.3', replacement: 'sonner' },
+      { find: 'recharts@2.15.2', replacement: 'recharts' },
+      {
+        find: 'react-resizable-panels@2.1.7',
+        replacement: 'react-resizable-panels'
+      },
+      {
+        find: 'react-hook-form@7.55.0',
+        replacement: 'react-hook-form'
+      },
+      {
+        find: 'react-day-picker@8.10.1',
+        replacement: 'react-day-picker'
+      },
+      { find: 'next-themes@0.4.6', replacement: 'next-themes' },
+      { find: 'lucide-react@0.487.0', replacement: 'lucide-react' },
+      { find: 'input-otp@1.4.2', replacement: 'input-otp' },
+      {
+        find: 'embla-carousel-react@8.6.0',
+        replacement: 'embla-carousel-react'
+      },
+      { find: 'cmdk@1.1.1', replacement: 'cmdk' },
+      {
+        find: 'class-variance-authority@0.7.1',
+        replacement: 'class-variance-authority'
+      },
+      {
+        find: '@radix-ui/react-tooltip@1.1.8',
+        replacement: '@radix-ui/react-tooltip'
+      },
+      {
+        find: '@radix-ui/react-toggle@1.1.2',
+        replacement: '@radix-ui/react-toggle'
+      },
+      {
+        find: '@radix-ui/react-toggle-group@1.1.2',
+        replacement: '@radix-ui/react-toggle-group'
+      },
+      {
+        find: '@radix-ui/react-tabs@1.1.3',
+        replacement: '@radix-ui/react-tabs'
+      },
+      {
+        find: '@radix-ui/react-switch@1.1.3',
+        replacement: '@radix-ui/react-switch'
+      },
+      {
+        find: '@radix-ui/react-slot@1.1.2',
+        replacement: '@radix-ui/react-slot'
+      },
+      {
+        find: '@radix-ui/react-slider@1.2.3',
+        replacement: '@radix-ui/react-slider'
+      },
+      {
+        find: '@radix-ui/react-separator@1.1.2',
+        replacement: '@radix-ui/react-separator'
+      },
+      {
+        find: '@radix-ui/react-select@2.1.6',
+        replacement: '@radix-ui/react-select'
+      },
+      {
+        find: '@radix-ui/react-scroll-area@1.2.3',
+        replacement: '@radix-ui/react-scroll-area'
+      },
+      {
+        find: '@radix-ui/react-radio-group@1.2.3',
+        replacement: '@radix-ui/react-radio-group'
+      },
+      {
+        find: '@radix-ui/react-progress@1.1.2',
+        replacement: '@radix-ui/react-progress'
+      },
+      {
+        find: '@radix-ui/react-popover@1.1.6',
+        replacement: '@radix-ui/react-popover'
+      },
+      {
+        find: '@radix-ui/react-navigation-menu@1.2.5',
+        replacement: '@radix-ui/react-navigation-menu'
+      },
+      {
+        find: '@radix-ui/react-menubar@1.1.6',
+        replacement: '@radix-ui/react-menubar'
+      },
+      {
+        find: '@radix-ui/react-label@2.1.2',
+        replacement: '@radix-ui/react-label'
+      },
+      {
+        find: '@radix-ui/react-hover-card@1.1.6',
+        replacement: '@radix-ui/react-hover-card'
+      },
+      {
+        find: '@radix-ui/react-dropdown-menu@2.1.6',
+        replacement: '@radix-ui/react-dropdown-menu'
+      },
+      {
+        find: '@radix-ui/react-dialog@1.1.6',
+        replacement: '@radix-ui/react-dialog'
+      },
+      {
+        find: '@radix-ui/react-context-menu@2.2.6',
+        replacement: '@radix-ui/react-context-menu'
+      },
+      {
+        find: '@radix-ui/react-collapsible@1.1.3',
+        replacement: '@radix-ui/react-collapsible'
+      },
+      {
+        find: '@radix-ui/react-checkbox@1.1.4',
+        replacement: '@radix-ui/react-checkbox'
+      },
+      {
+        find: '@radix-ui/react-avatar@1.1.3',
+        replacement: '@radix-ui/react-avatar'
+      },
+      {
+        find: '@radix-ui/react-aspect-ratio@1.1.2',
+        replacement: '@radix-ui/react-aspect-ratio'
+      },
+      {
+        find: '@radix-ui/react-alert-dialog@1.1.6',
+        replacement: '@radix-ui/react-alert-dialog'
+      },
+      {
+        find: '@radix-ui/react-accordion@1.2.3',
+        replacement: '@radix-ui/react-accordion'
+      },
+      {
+        find: '@',
+        replacement: 'C:\\Users\\brian\\Desktop\\B.U.D\\Traditional_Market_Food_Order_MVP\\src'
+      },
+      {
+        find: /^\/?@vite\/env/,
+        replacement: '/@fs/C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/vite/dist/client/env.mjs'
+      },
+      {
+        find: /^\/?@vite\/client/,
+        replacement: '/@fs/C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/vite/dist/client/client.mjs'
+      }
+    ],
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [ 'module', 'browser', 'development|production' ],
+    builtins: []
+  },
+  build: {
+    target: 'esnext',
+    polyfillModulePreload: true,
+    modulePreload: { polyfill: true },
+    outDir: 'dist',
+    assetsDir: 'assets',
+    assetsInlineLimit: 4096,
+    sourcemap: false,
+    terserOptions: {},
+    rollupOptions: {},
+    commonjsOptions: { include: [ /node_modules/ ], extensions: [ '.js', '.cjs' ] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [ /node_modules/ ] },
+    write: true,
+    emptyOutDir: null,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    cssCodeSplit: true,
+    minify: 'esbuild',
+    ssr: false,
+    emitAssets: false,
+    createEnvironment: [Function: createEnvironment],
+    cssTarget: 'esnext',
+    cssMinify: true
+  },
+  server: {
+    port: 3000,
+    strictPort: false,
+    host: true,
+    allowedHosts: [],
+    https: undefined,
+    open: true,
+    proxy: undefined,
+    cors: {
+      origin: /^https?:\/\/(?:(?:[^:]+\.)?localhost|127\.0\.0\.1|\[::1\])(?::\d+)?$/
+    },
+    headers: {},
+    warmup: { clientFiles: [], ssrFiles: [] },
+    middlewareMode: false,
+    fs: {
+      strict: true,
+      deny: [ '.env', '.env.*', '*.{crt,pem}', '**/.git/**' ],
+      allow: [
+        'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP'
+      ]
+    },
+    preTransformRequests: true,
+    perEnvironmentStartEndDuringDev: false,
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    watch: { ignored: [ '**/*.log', '**/vite-*.log' ] }
+  },
+  esbuild: false,
+  oxc: false,
+  optimizeDeps: {
+    include: [ 'react/jsx-dev-runtime' ],
+    exclude: [],
+    needsInterop: [],
+    extensions: [],
+    disabled: undefined,
+    holdUntilCrawlEnd: true,
+    force: false,
+    noDiscovery: false,
+    esbuildOptions: { preserveSymlinks: false, jsx: 'automatic' }
+  },
+  environments: {
+    client: {
+      define: undefined,
+      resolve: {
+        externalConditions: [ 'node' ],
+        extensions: [ '.js', '.jsx', '.ts', '.tsx', '.json' ],
+        dedupe: [],
+        noExternal: [],
+        external: [],
+        preserveSymlinks: false,
+        alias: [
+          { find: 'vaul@1.1.2', replacement: 'vaul' },
+          { find: 'sonner@2.0.3', replacement: 'sonner' },
+          { find: 'recharts@2.15.2', replacement: 'recharts' },
+          {
+            find: 'react-resizable-panels@2.1.7',
+            replacement: 'react-resizable-panels'
+          },
+          {
+            find: 'react-hook-form@7.55.0',
+            replacement: 'react-hook-form'
+          },
+          {
+            find: 'react-day-picker@8.10.1',
+            replacement: 'react-day-picker'
+          },
+          { find: 'next-themes@0.4.6', replacement: 'next-themes' },
+          { find: 'lucide-react@0.487.0', replacement: 'lucide-react' },
+          { find: 'input-otp@1.4.2', replacement: 'input-otp' },
+          {
+            find: 'embla-carousel-react@8.6.0',
+            replacement: 'embla-carousel-react'
+          },
+          { find: 'cmdk@1.1.1', replacement: 'cmdk' },
+          {
+            find: 'class-variance-authority@0.7.1',
+            replacement: 'class-variance-authority'
+          },
+          {
+            find: '@radix-ui/react-tooltip@1.1.8',
+            replacement: '@radix-ui/react-tooltip'
+          },
+          {
+            find: '@radix-ui/react-toggle@1.1.2',
+            replacement: '@radix-ui/react-toggle'
+          },
+          {
+            find: '@radix-ui/react-toggle-group@1.1.2',
+            replacement: '@radix-ui/react-toggle-group'
+          },
+          {
+            find: '@radix-ui/react-tabs@1.1.3',
+            replacement: '@radix-ui/react-tabs'
+          },
+          {
+            find: '@radix-ui/react-switch@1.1.3',
+            replacement: '@radix-ui/react-switch'
+          },
+          {
+            find: '@radix-ui/react-slot@1.1.2',
+            replacement: '@radix-ui/react-slot'
+          },
+          {
+            find: '@radix-ui/react-slider@1.2.3',
+            replacement: '@radix-ui/react-slider'
+          },
+          {
+            find: '@radix-ui/react-separator@1.1.2',
+            replacement: '@radix-ui/react-separator'
+          },
+          {
+            find: '@radix-ui/react-select@2.1.6',
+            replacement: '@radix-ui/react-select'
+          },
+          {
+            find: '@radix-ui/react-scroll-area@1.2.3',
+            replacement: '@radix-ui/react-scroll-area'
+          },
+          {
+            find: '@radix-ui/react-radio-group@1.2.3',
+            replacement: '@radix-ui/react-radio-group'
+          },
+          {
+            find: '@radix-ui/react-progress@1.1.2',
+            replacement: '@radix-ui/react-progress'
+          },
+          {
+            find: '@radix-ui/react-popover@1.1.6',
+            replacement: '@radix-ui/react-popover'
+          },
+          {
+            find: '@radix-ui/react-navigation-menu@1.2.5',
+            replacement: '@radix-ui/react-navigation-menu'
+          },
+          {
+            find: '@radix-ui/react-menubar@1.1.6',
+            replacement: '@radix-ui/react-menubar'
+          },
+          {
+            find: '@radix-ui/react-label@2.1.2',
+            replacement: '@radix-ui/react-label'
+          },
+          {
+            find: '@radix-ui/react-hover-card@1.1.6',
+            replacement: '@radix-ui/react-hover-card'
+          },
+          {
+            find: '@radix-ui/react-dropdown-menu@2.1.6',
+            replacement: '@radix-ui/react-dropdown-menu'
+          },
+          {
+            find: '@radix-ui/react-dialog@1.1.6',
+            replacement: '@radix-ui/react-dialog'
+          },
+          {
+            find: '@radix-ui/react-context-menu@2.2.6',
+            replacement: '@radix-ui/react-context-menu'
+          },
+          {
+            find: '@radix-ui/react-collapsible@1.1.3',
+            replacement: '@radix-ui/react-collapsible'
+          },
+          {
+            find: '@radix-ui/react-checkbox@1.1.4',
+            replacement: '@radix-ui/react-checkbox'
+          },
+          {
+            find: '@radix-ui/react-avatar@1.1.3',
+            replacement: '@radix-ui/react-avatar'
+          },
+          {
+            find: '@radix-ui/react-aspect-ratio@1.1.2',
+            replacement: '@radix-ui/react-aspect-ratio'
+          },
+          {
+            find: '@radix-ui/react-alert-dialog@1.1.6',
+            replacement: '@radix-ui/react-alert-dialog'
+          },
+          {
+            find: '@radix-ui/react-accordion@1.2.3',
+            replacement: '@radix-ui/react-accordion'
+          },
+          {
+            find: '@',
+            replacement: 'C:\\Users\\brian\\Desktop\\B.U.D\\Traditional_Market_Food_Order_MVP\\src'
+          },
+          {
+            find: /^\/?@vite\/env/,
+            replacement: '/@fs/C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/vite/dist/client/env.mjs'
+          },
+          {
+            find: /^\/?@vite\/client/,
+            replacement: '/@fs/C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/vite/dist/client/client.mjs'
+          }
+        ],
+        mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+        conditions: [ 'module', 'browser', 'development|production' ],
+        builtins: []
+      },
+      keepProcessEnv: false,
+      consumer: 'client',
+      optimizeDeps: {
+        include: [ 'react/jsx-dev-runtime' ],
+        exclude: [],
+        needsInterop: [],
+        extensions: [],
+        disabled: undefined,
+        holdUntilCrawlEnd: true,
+        force: false,
+        noDiscovery: false,
+        esbuildOptions: { preserveSymlinks: false, jsx: 'automatic' }
+      },
+      dev: {
+        warmup: [],
+        sourcemap: { js: true },
+        sourcemapIgnoreList: [Function: isInNodeModules$1],
+        preTransformRequests: true,
+        createEnvironment: [Function: defaultCreateClientDevEnvironment],
+        recoverable: true,
+        moduleRunnerTransform: false
+      },
+      build: {
+        target: 'esnext',
+        polyfillModulePreload: true,
+        modulePreload: { polyfill: true },
+        outDir: 'dist',
+        assetsDir: 'assets',
+        assetsInlineLimit: 4096,
+        sourcemap: false,
+        terserOptions: {},
+        rollupOptions: {},
+        commonjsOptions: { include: [ /node_modules/ ], extensions: [ '.js', '.cjs' ] },
+        dynamicImportVarsOptions: { warnOnError: true, exclude: [ /node_modules/ ] },
+        write: true,
+        emptyOutDir: null,
+        copyPublicDir: true,
+        manifest: false,
+        lib: false,
+        ssrManifest: false,
+        ssrEmitAssets: false,
+        reportCompressedSize: true,
+        chunkSizeWarningLimit: 500,
+        watch: null,
+        cssCodeSplit: true,
+        minify: 'esbuild',
+        ssr: false,
+        emitAssets: true,
+        createEnvironment: [Function: createEnvironment],
+        cssTarget: 'esnext',
+        cssMinify: true
+      }
+    },
+    ssr: {
+      define: undefined,
+      resolve: {
+        externalConditions: [ 'node' ],
+        extensions: [ '.js', '.jsx', '.ts', '.tsx', '.json' ],
+        dedupe: [],
+        noExternal: [],
+        external: [],
+        preserveSymlinks: false,
+        alias: [
+          { find: 'vaul@1.1.2', replacement: 'vaul' },
+          { find: 'sonner@2.0.3', replacement: 'sonner' },
+          { find: 'recharts@2.15.2', replacement: 'recharts' },
+          {
+            find: 'react-resizable-panels@2.1.7',
+            replacement: 'react-resizable-panels'
+          },
+          {
+            find: 'react-hook-form@7.55.0',
+            replacement: 'react-hook-form'
+          },
+          {
+            find: 'react-day-picker@8.10.1',
+            replacement: 'react-day-picker'
+          },
+          { find: 'next-themes@0.4.6', replacement: 'next-themes' },
+          { find: 'lucide-react@0.487.0', replacement: 'lucide-react' },
+          { find: 'input-otp@1.4.2', replacement: 'input-otp' },
+          {
+            find: 'embla-carousel-react@8.6.0',
+            replacement: 'embla-carousel-react'
+          },
+          { find: 'cmdk@1.1.1', replacement: 'cmdk' },
+          {
+            find: 'class-variance-authority@0.7.1',
+            replacement: 'class-variance-authority'
+          },
+          {
+            find: '@radix-ui/react-tooltip@1.1.8',
+            replacement: '@radix-ui/react-tooltip'
+          },
+          {
+            find: '@radix-ui/react-toggle@1.1.2',
+            replacement: '@radix-ui/react-toggle'
+          },
+          {
+            find: '@radix-ui/react-toggle-group@1.1.2',
+            replacement: '@radix-ui/react-toggle-group'
+          },
+          {
+            find: '@radix-ui/react-tabs@1.1.3',
+            replacement: '@radix-ui/react-tabs'
+          },
+          {
+            find: '@radix-ui/react-switch@1.1.3',
+            replacement: '@radix-ui/react-switch'
+          },
+          {
+            find: '@radix-ui/react-slot@1.1.2',
+            replacement: '@radix-ui/react-slot'
+          },
+          {
+            find: '@radix-ui/react-slider@1.2.3',
+            replacement: '@radix-ui/react-slider'
+          },
+          {
+            find: '@radix-ui/react-separator@1.1.2',
+            replacement: '@radix-ui/react-separator'
+          },
+          {
+            find: '@radix-ui/react-select@2.1.6',
+            replacement: '@radix-ui/react-select'
+          },
+          {
+            find: '@radix-ui/react-scroll-area@1.2.3',
+            replacement: '@radix-ui/react-scroll-area'
+          },
+          {
+            find: '@radix-ui/react-radio-group@1.2.3',
+            replacement: '@radix-ui/react-radio-group'
+          },
+          {
+            find: '@radix-ui/react-progress@1.1.2',
+            replacement: '@radix-ui/react-progress'
+          },
+          {
+            find: '@radix-ui/react-popover@1.1.6',
+            replacement: '@radix-ui/react-popover'
+          },
+          {
+            find: '@radix-ui/react-navigation-menu@1.2.5',
+            replacement: '@radix-ui/react-navigation-menu'
+          },
+          {
+            find: '@radix-ui/react-menubar@1.1.6',
+            replacement: '@radix-ui/react-menubar'
+          },
+          {
+            find: '@radix-ui/react-label@2.1.2',
+            replacement: '@radix-ui/react-label'
+          },
+          {
+            find: '@radix-ui/react-hover-card@1.1.6',
+            replacement: '@radix-ui/react-hover-card'
+          },
+          {
+            find: '@radix-ui/react-dropdown-menu@2.1.6',
+            replacement: '@radix-ui/react-dropdown-menu'
+          },
+          {
+            find: '@radix-ui/react-dialog@1.1.6',
+            replacement: '@radix-ui/react-dialog'
+          },
+          {
+            find: '@radix-ui/react-context-menu@2.2.6',
+            replacement: '@radix-ui/react-context-menu'
+          },
+          {
+            find: '@radix-ui/react-collapsible@1.1.3',
+            replacement: '@radix-ui/react-collapsible'
+          },
+          {
+            find: '@radix-ui/react-checkbox@1.1.4',
+            replacement: '@radix-ui/react-checkbox'
+          },
+          {
+            find: '@radix-ui/react-avatar@1.1.3',
+            replacement: '@radix-ui/react-avatar'
+          },
+          {
+            find: '@radix-ui/react-aspect-ratio@1.1.2',
+            replacement: '@radix-ui/react-aspect-ratio'
+          },
+          {
+            find: '@radix-ui/react-alert-dialog@1.1.6',
+            replacement: '@radix-ui/react-alert-dialog'
+          },
+          {
+            find: '@radix-ui/react-accordion@1.2.3',
+            replacement: '@radix-ui/react-accordion'
+          },
+          {
+            find: '@',
+            replacement: 'C:\\Users\\brian\\Desktop\\B.U.D\\Traditional_Market_Food_Order_MVP\\src'
+          },
+          {
+            find: /^\/?@vite\/env/,
+            replacement: '/@fs/C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/vite/dist/client/env.mjs'
+          },
+          {
+            find: /^\/?@vite\/client/,
+            replacement: '/@fs/C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/vite/dist/client/client.mjs'
+          }
+        ],
+        mainFields: [ 'module', 'jsnext:main', 'jsnext' ],
+        conditions: [ 'module', 'node', 'development|production' ],
+        builtins: [
+          '_http_agent',         '_http_client',        '_http_common',
+          '_http_incoming',      '_http_outgoing',      '_http_server',
+          '_stream_duplex',      '_stream_passthrough', '_stream_readable',
+          '_stream_transform',   '_stream_wrap',        '_stream_writable',
+          '_tls_common',         '_tls_wrap',           'assert',
+          'assert/strict',       'async_hooks',         'buffer',
+          'child_process',       'cluster',             'console',
+          'constants',           'crypto',              'dgram',
+          'diagnostics_channel', 'dns',                 'dns/promises',
+          'domain',              'events',              'fs',
+          'fs/promises',         'http',                'http2',
+          'https',               'inspector',           'inspector/promises',
+          'module',              'net',                 'os',
+          'path',                'path/posix',          'path/win32',
+          'perf_hooks',          'process',             'punycode',
+          'querystring',         'readline',            'readline/promises',
+          'repl',                'stream',              'stream/consumers',
+          'stream/promises',     'stream/web',          'string_decoder',
+          'sys',                 'timers',              'timers/promises',
+          'tls',                 'trace_events',        'tty',
+          'url',                 'util',                'util/types',
+          'v8',                  'vm',                  'wasi',
+          'worker_threads',      'zlib',                /^node:/,
+          /^npm:/,               /^bun:/
+        ]
+      },
+      keepProcessEnv: true,
+      consumer: 'server',
+      optimizeDeps: {
+        include: [],
+        exclude: [],
+        needsInterop: [],
+        extensions: [],
+        disabled: undefined,
+        holdUntilCrawlEnd: true,
+        force: false,
+        noDiscovery: true,
+        esbuildOptions: { preserveSymlinks: false }
+      },
+      dev: {
+        warmup: [],
+        sourcemap: { js: true },
+        sourcemapIgnoreList: [Function: isInNodeModules$1],
+        preTransformRequests: false,
+        createEnvironment: [Function: defaultCreateDevEnvironment],
+        recoverable: false,
+        moduleRunnerTransform: true
+      },
+      build: {
+        target: 'esnext',
+        polyfillModulePreload: true,
+        modulePreload: { polyfill: true },
+        outDir: 'dist',
+        assetsDir: 'assets',
+        assetsInlineLimit: 4096,
+        sourcemap: false,
+        terserOptions: {},
+        rollupOptions: {},
+        commonjsOptions: { include: [ /node_modules/ ], extensions: [ '.js', '.cjs' ] },
+        dynamicImportVarsOptions: { warnOnError: true, exclude: [ /node_modules/ ] },
+        write: true,
+        emptyOutDir: null,
+        copyPublicDir: true,
+        manifest: false,
+        lib: false,
+        ssrManifest: false,
+        ssrEmitAssets: false,
+        reportCompressedSize: true,
+        chunkSizeWarningLimit: 500,
+        watch: null,
+        cssCodeSplit: true,
+        minify: false,
+        ssr: true,
+        emitAssets: false,
+        createEnvironment: [Function: createEnvironment],
+        cssTarget: 'esnext',
+        cssMinify: 'esbuild'
+      }
+    }
+  },
+  configFile: 'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/vite.config.ts',
+  configFileDependencies: [
+    'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/vite.config.ts'
+  ],
+  inlineConfig: {
+    root: undefined,
+    base: undefined,
+    mode: undefined,
+    configFile: undefined,
+    configLoader: undefined,
+    logLevel: undefined,
+    clearScreen: undefined,
+    server: { host: true },
+    forceOptimizeDeps: undefined
+  },
+  root: 'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP',
+  base: '/',
+  decodedBase: '/',
+  rawBase: '/',
+  publicDir: 'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/public',
+  cacheDir: 'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite',
+  command: 'serve',
+  mode: 'development',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: false,
+  css: {
+    transformer: 'postcss',
+    preprocessorMaxWorkers: 0,
+    devSourcemap: false
+  },
+  json: { namedExports: true, stringify: 'auto' },
+  builder: undefined,
+  preview: {
+    port: 4173,
+    strictPort: false,
+    host: true,
+    allowedHosts: [],
+    https: undefined,
+    open: true,
+    proxy: undefined,
+    cors: {
+      origin: /^https?:\/\/(?:(?:[^:]+\.)?localhost|127\.0\.0\.1|\[::1\])(?::\d+)?$/
+    },
+    headers: {}
+  },
+  envDir: 'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP',
+  env: {
+    VITE_SUPABASE_URL: 'https://eoxzechvujcmbtsxintt.supabase.co',
+    VITE_SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVveHplY2h2dWpjbWJ0c3hpbnR0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE4OTY0NTcsImV4cCI6MjA3NzQ3MjQ1N30.jwm3fFn2CfWF6JX4E-pcncpTDgeaLRLu3OoZCgbT_pg',
+    BASE_URL: '/',
+    MODE: 'development',
+    DEV: true,
+    PROD: false
+  },
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP' => {
+      dir: 'C:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP',
+      data: {
+        name: 'Traditional Market Food Order MVP',
+        version: '0.1.0',
+        private: true,
+        dependencies: {
+          '@radix-ui/react-accordion': '^1.2.3',
+          '@radix-ui/react-alert-dialog': '^1.1.6',
+          '@radix-ui/react-aspect-ratio': '^1.1.2',
+          '@radix-ui/react-avatar': '^1.1.3',
+          '@radix-ui/react-checkbox': '^1.1.4',
+          '@radix-ui/react-collapsible': '^1.1.3',
+          '@radix-ui/react-context-menu': '^2.2.6',
+          '@radix-ui/react-dialog': '^1.1.6',
+          '@radix-ui/react-dropdown-menu': '^2.1.6',
+          '@radix-ui/react-hover-card': '^1.1.6',
+          '@radix-ui/react-label': '^2.1.2',
+          '@radix-ui/react-menubar': '^1.1.6',
+          '@radix-ui/react-navigation-menu': '^1.2.5',
+          '@radix-ui/react-popover': '^1.1.6',
+          '@radix-ui/react-progress': '^1.1.2',
+          '@radix-ui/react-radio-group': '^1.2.3',
+          '@radix-ui/react-scroll-area': '^1.2.3',
+          '@radix-ui/react-select': '^2.1.6',
+          '@radix-ui/react-separator': '^1.1.2',
+          '@radix-ui/react-slider': '^1.2.3',
+          '@radix-ui/react-slot': '^1.1.2',
+          '@radix-ui/react-switch': '^1.1.3',
+          '@radix-ui/react-tabs': '^1.1.3',
+          '@radix-ui/react-toggle': '^1.1.2',
+          '@radix-ui/react-toggle-group': '^1.1.2',
+          '@radix-ui/react-tooltip': '^1.1.8',
+          '@supabase/supabase-js': '^2.78.0',
+          '@vercel/analytics': '^1.5.0',
+          'class-variance-authority': '^0.7.1',
+          clsx: '*',
+          cmdk: '^1.1.1',
+          dotenv: '^17.2.3',
+          'embla-carousel-react': '^8.6.0',
+          'input-otp': '^1.4.2',
+          'lucide-react': '^0.487.0',
+          'next-themes': '^0.4.6',
+          react: '^18.3.1',
+          'react-day-picker': '^8.10.1',
+          'react-dom': '^18.3.1',
+          'react-hook-form': '^7.55.0',
+          'react-resizable-panels': '^2.1.7',
+          recharts: '^2.15.2',
+          sonner: '^2.0.3',
+          'tailwind-merge': '*',
+          vaul: '^1.1.2'
+        },
+        devDependencies: {
+          '@types/node': '^20.10.0',
+          '@types/react': '^19.2.2',
+          '@types/react-dom': '^19.2.2',
+          '@vercel/node': '^5.5.3',
+          '@vitejs/plugin-react-swc': '^3.10.2',
+          typescript: '^5.9.3',
+          vite: '6.3.5'
+        },
+        scripts: { dev: 'vite', build: 'vite build' }
+      },
+      hasSideEffects: [Function: hasSideEffects],
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  appType: 'spa',
+  experimental: { importGlobRestoreExtension: false, hmrPartialAccept: false },
+  future: undefined,
+  ssr: {
+    target: 'node',
+    optimizeDeps: {
+      esbuildOptions: { preserveSymlinks: false },
+      include: [],
+      exclude: [],
+      needsInterop: [],
+      extensions: [],
+      holdUntilCrawlEnd: true,
+      force: false,
+      noDiscovery: true
+    },
+    external: [],
+    noExternal: [],
+    resolve: {
+      conditions: [ 'module', 'node', 'development|production' ],
+      externalConditions: [ 'node' ]
+    }
+  },
+  dev: {
+    warmup: [],
+    sourcemap: { js: true },
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    preTransformRequests: false,
+    createEnvironment: [Function: defaultCreateDevEnvironment],
+    recoverable: false,
+    moduleRunnerTransform: false
+  },
+  webSocketToken: 'FZXMUOhCOedH',
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks],
+  createResolver: [Function: createResolver],
+  fsDenyGlob: [Function: arrayMatcher],
+  safeModulePaths: Set(0) {},
+  additionalAllowedHosts: []
+}
+2025-11-01T08:33:33.981Z vite:deps (client) Hash is consistent. Skipping. Use --force to override.
+2025-11-01T08:33:34.024Z vite:html-fallback Rewriting GET / to /index.html
+2025-11-01T08:33:34.031Z vite:time [32m7.58ms[39m [2m/index.html[22m
+2025-11-01T08:33:34.032Z vite:resolve [32m2.41ms[39m [36m/src/main.tsx[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/main.tsx[22m
+2025-11-01T08:33:34.055Z vite:load [33m21.02ms[39m [fs] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.071Z vite:html-fallback Rewriting GET / to /index.html
+2025-11-01T08:33:34.086Z vite:resolve [32m1.99ms[39m [36m./App.tsx[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/App.tsx[22m
+2025-11-01T08:33:34.087Z vite:resolve [32m2.48ms[39m [36m./index.css[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/index.css[22m
+2025-11-01T08:33:34.087Z vite:resolve [32m2.99ms[39m [36mreact/jsx-dev-runtime[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.088Z vite:resolve [32m3.33ms[39m [36mreact-dom/client[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/react-dom_client.js?v=8264e7fe[22m
+2025-11-01T08:33:34.088Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.089Z vite:import-analysis /node_modules/.vite/deps/react-dom_client.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.090Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/react_jsx-dev-runtime.js[39m
+2025-11-01T08:33:34.090Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/react-dom_client.js[39m
+2025-11-01T08:33:34.090Z vite:import-analysis [32m6.45ms[39m [2m[4 imports rewritten] [2msrc/main.tsx[22m[2m[22m
+2025-11-01T08:33:34.091Z vite:transform [33m35.51ms[39m [2m/src/main.tsx[22m
+2025-11-01T08:33:34.098Z vite:cache [memory] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.099Z vite:time [33m29.09ms[39m [2m/index.html[22m
+2025-11-01T08:33:34.100Z vite:load [33m10.74ms[39m [plugin] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.102Z vite:resolve [32m0.30ms[39m [36m./chunk-QJTFJ6OV.js[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.103Z vite:resolve [32m0.86ms[39m [36m./chunk-V4OQ3NZ2.js[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.103Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-QJTFJ6OV.js[39m
+2025-11-01T08:33:34.104Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-V4OQ3NZ2.js[39m
+2025-11-01T08:33:34.104Z vite:import-analysis [32m3.20ms[39m [2m[2 imports rewritten] [2mnode_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.105Z vite:transform [32m3.92ms[39m [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.105Z vite:load [33m15.68ms[39m [fs] [2m/src/index.css[22m
+2025-11-01T08:33:34.107Z vite:load [33m17.67ms[39m [plugin] [2m/node_modules/.vite/deps/react-dom_client.js?v=8264e7fe[22m
+2025-11-01T08:33:34.108Z vite:resolve [32m0.22ms[39m [36m./chunk-AP6GYKF3.js[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-AP6GYKF3.js?v=8264e7fe[22m
+2025-11-01T08:33:34.109Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-AP6GYKF3.js[39m
+2025-11-01T08:33:34.109Z vite:import-analysis [32m1.45ms[39m [2m[3 imports rewritten] [2mnode_modules/.vite/deps/react-dom_client.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.110Z vite:transform [32m1.96ms[39m [2m/node_modules/.vite/deps/react-dom_client.js?v=8264e7fe[22m
+2025-11-01T08:33:34.110Z vite:load [33m20.60ms[39m [fs] [2m/src/App.tsx[22m
+2025-11-01T08:33:34.115Z vite:resolve [32m0.22ms[39m [36m/@vite/client[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/vite/dist/client/client.mjs[22m
+2025-11-01T08:33:34.116Z vite:html-fallback Rewriting GET / to /index.html
+2025-11-01T08:33:34.125Z vite:resolve [32m4.88ms[39m [36m./components/MainScreen[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:34.125Z vite:resolve [32m5.35ms[39m [36m./components/MarketSelection[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:34.125Z vite:resolve [32m5.68ms[39m [36m./components/MenuList[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/MenuList.tsx[22m
+2025-11-01T08:33:34.126Z vite:resolve [32m6.03ms[39m [36m./components/MenuDetail[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:34.126Z vite:resolve [32m6.32ms[39m [36m./components/PaymentForm[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:34.126Z vite:resolve [32m6.67ms[39m [36m./services/marketService[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/services/marketService.ts[22m
+2025-11-01T08:33:34.127Z vite:resolve [32m7.00ms[39m [36m./contexts/CartContext[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:34.127Z vite:resolve [32m7.46ms[39m [36mreact[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.128Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.129Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.129Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.130Z vite:hmr [self-accepts] [2msrc/App.tsx[22m
+2025-11-01T08:33:34.131Z vite:load [32m2.43ms[39m [plugin] [2m/@react-refresh[22m
+2025-11-01T08:33:34.132Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/react.js[39m
+2025-11-01T08:33:34.133Z vite:import-analysis [33m13.40ms[39m [2m[10 imports rewritten] [2msrc/App.tsx[22m[2m[22m
+2025-11-01T08:33:34.133Z vite:transform [33m22.43ms[39m [2m/src/App.tsx[22m
+2025-11-01T08:33:34.136Z vite:import-analysis [32m0.72ms[39m [2m[0 imports rewritten] [2m/@react-refresh[22m[2m[22m
+2025-11-01T08:33:34.137Z vite:transform [32m4.90ms[39m [2m/@react-refresh[22m
+2025-11-01T08:33:34.143Z vite:cache [memory] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.143Z vite:time [32m0.76ms[39m [2m/src/main.tsx[22m
+2025-11-01T08:33:34.145Z vite:load [33m41.87ms[39m [plugin] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.146Z vite:import-analysis [32m0.09ms[39m [2m[no imports] [2mnode_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.147Z vite:transform [32m0.85ms[39m[2m [skipped] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.147Z vite:load [33m43.79ms[39m [plugin] [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.149Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.150Z vite:import-analysis [32m2.21ms[39m [2m[1 imports rewritten] [2mnode_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.150Z vite:transform [32m3.02ms[39m [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.157Z vite:load [33m48.23ms[39m [plugin] [2m/node_modules/.vite/deps/chunk-AP6GYKF3.js?v=8264e7fe[22m
+2025-11-01T08:33:34.185Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.186Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.186Z vite:import-analysis [33m23.49ms[39m [2m[2 imports rewritten] [2mnode_modules/.vite/deps/chunk-AP6GYKF3.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.187Z vite:transform [33m28.97ms[39m [2m/node_modules/.vite/deps/chunk-AP6GYKF3.js?v=8264e7fe[22m
+2025-11-01T08:33:34.194Z vite:load [31m79.23ms[39m [fs] [2m/@vite/client[22m
+2025-11-01T08:33:34.215Z vite:resolve [32m0.38ms[39m [36m@vite/env[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:34.216Z vite:import-analysis [32m2.54ms[39m [2m[1 imports rewritten] [2mnode_modules/vite/dist/client/client.mjs[22m[2m[22m
+2025-11-01T08:33:34.216Z vite:transform [33m20.92ms[39m [2m/@vite/client[22m
+2025-11-01T08:33:34.226Z vite:time [31m111.94ms[39m [2m/@vite/client[22m
+2025-11-01T08:33:34.230Z vite:cache [memory] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.231Z vite:time [31m114.83ms[39m [2m/index.html[22m
+2025-11-01T08:33:34.256Z vite:load [31m124.58ms[39m [plugin] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.258Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.258Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.259Z vite:import-analysis [32m1.45ms[39m [2m[2 imports rewritten] [2mnode_modules/.vite/deps/react.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.259Z vite:transform [32m2.13ms[39m [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.260Z vite:load [31m128.62ms[39m [fs] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:34.260Z vite:load [31m129.34ms[39m [fs] [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:34.261Z vite:load [31m130.00ms[39m [fs] [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:34.262Z vite:load [31m130.64ms[39m [fs] [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:34.262Z vite:load [31m131.23ms[39m [fs] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:34.263Z vite:load [31m131.91ms[39m [fs] [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:34.264Z vite:load [31m132.50ms[39m [fs] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:34.266Z vite:cache [304] [2m/@react-refresh[22m
+2025-11-01T08:33:34.267Z vite:time [32m0.69ms[39m [2m/@react-refresh[22m
+2025-11-01T08:33:34.286Z vite:resolve [32m0.76ms[39m [36m./ui/button[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/ui/button.tsx[22m
+2025-11-01T08:33:34.287Z vite:resolve [32m1.38ms[39m [36mlucide-react[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/lucide-react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.287Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.288Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.288Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.289Z vite:hmr [self-accepts] [2msrc/components/MainScreen.tsx[22m
+2025-11-01T08:33:34.289Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/lucide-react.js[39m
+2025-11-01T08:33:34.290Z vite:import-analysis [32m4.53ms[39m [2m[4 imports rewritten] [2msrc/components/MainScreen.tsx[22m[2m[22m
+2025-11-01T08:33:34.290Z vite:transform [33m29.82ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:34.293Z vite:resolve [32m0.94ms[39m [36m./ui/card[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/ui/card.tsx[22m
+2025-11-01T08:33:34.293Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.294Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.294Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.295Z vite:hmr [self-accepts] [2msrc/components/MarketSelection.tsx[22m
+2025-11-01T08:33:34.296Z vite:import-analysis [32m4.12ms[39m [2m[4 imports rewritten] [2msrc/components/MarketSelection.tsx[22m[2m[22m
+2025-11-01T08:33:34.296Z vite:transform [33m35.01ms[39m [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:34.300Z vite:resolve [32m1.73ms[39m [36m./figma/ImageWithFallback[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:34.301Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.301Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.302Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.302Z vite:hmr [self-accepts] [2msrc/components/MenuList.tsx[22m
+2025-11-01T08:33:34.303Z vite:import-analysis [32m5.51ms[39m [2m[5 imports rewritten] [2msrc/components/MenuList.tsx[22m[2m[22m
+2025-11-01T08:33:34.303Z vite:transform [33m41.24ms[39m [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:34.305Z vite:resolve [32m0.69ms[39m [36m../lib/supabaseClient[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:34.306Z vite:import-analysis [32m1.69ms[39m [2m[1 imports rewritten] [2msrc/services/marketService.ts[22m[2m[22m
+2025-11-01T08:33:34.307Z vite:transform [33m43.19ms[39m [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:34.311Z vite:resolve [32m2.03ms[39m [36m../contexts/CartContext[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:34.312Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.313Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.313Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.314Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.314Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.315Z vite:hmr [self-accepts] [2msrc/components/MenuDetail.tsx[22m
+2025-11-01T08:33:34.316Z vite:import-analysis [32m7.16ms[39m [2m[7 imports rewritten] [2msrc/components/MenuDetail.tsx[22m[2m[22m
+2025-11-01T08:33:34.316Z vite:transform [31m54.58ms[39m [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:34.318Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.318Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.319Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.320Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.320Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.320Z vite:hmr [self-accepts] [2msrc/contexts/CartContext.tsx[22m
+2025-11-01T08:33:34.321Z vite:import-analysis [32m3.80ms[39m [2m[3 imports rewritten] [2msrc/contexts/CartContext.tsx[22m[2m[22m
+2025-11-01T08:33:34.321Z vite:transform [31m57.32ms[39m [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:34.323Z vite:html-fallback Rewriting GET / to /index.html
+2025-11-01T08:33:34.335Z vite:resolve [32m6.15ms[39m [36m./ui/input[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/ui/input.tsx[22m
+2025-11-01T08:33:34.336Z vite:resolve [32m6.84ms[39m [36m./ui/label[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/ui/label.tsx[22m
+2025-11-01T08:33:34.337Z vite:resolve [32m7.32ms[39m [36m./ui/textarea[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:34.337Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.338Z vite:cache [memory] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:34.339Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.339Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.340Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.340Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.341Z vite:hmr [self-accepts] [2msrc/components/PaymentForm.tsx[22m
+2025-11-01T08:33:34.341Z vite:import-analysis [33m13.63ms[39m [2m[10 imports rewritten] [2msrc/components/PaymentForm.tsx[22m[2m[22m
+2025-11-01T08:33:34.342Z vite:transform [31m78.80ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:34.348Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.348Z vite:time [32m1.20ms[39m [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.350Z vite:cache [memory] [2m/@vite/client[22m
+2025-11-01T08:33:34.351Z vite:time [32m0.80ms[39m [2m/@vite/client[22m
+2025-11-01T08:33:34.351Z vite:load [31m135.91ms[39m [fs] [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:34.352Z vite:import-analysis [32m0.05ms[39m [2m[no imports] [2mnode_modules/vite/dist/client/env.mjs[22m[2m[22m
+2025-11-01T08:33:34.353Z vite:transform [32m0.69ms[39m [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:34.355Z vite:cache [304] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.356Z vite:time [32m0.63ms[39m [2m/src/main.tsx[22m
+2025-11-01T08:33:34.358Z vite:cache [304] [2m/@react-refresh[22m
+2025-11-01T08:33:34.359Z vite:time [32m0.61ms[39m [2m/@react-refresh[22m
+2025-11-01T08:33:34.360Z vite:html-fallback Rewriting GET /.well-known/appspecific/com.chrome.devtools.json to /index.html
+2025-11-01T08:33:34.361Z vite:load [31m72.28ms[39m [fs] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:34.362Z vite:load [31m66.79ms[39m [fs] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:34.363Z vite:load [31m59.91ms[39m [fs] [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:34.363Z vite:load [31m57.26ms[39m [fs] [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:34.366Z vite:cache [memory] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.367Z vite:time [33m44.36ms[39m [2m/index.html[22m
+2025-11-01T08:33:34.368Z vite:load [33m27.32ms[39m [fs] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:34.369Z vite:load [33m27.96ms[39m [fs] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:34.370Z vite:load [33m28.58ms[39m [fs] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:34.371Z vite:resolve [32m0.33ms[39m [36m@radix-ui/react-slot@1.1.2[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/@radix-ui_react-slot@1__1__2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.372Z vite:resolve [32m0.75ms[39m [36mclass-variance-authority@0.7.1[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/class-variance-authority@0__7__1.js?v=8264e7fe[22m
+2025-11-01T08:33:34.373Z vite:resolve [32m1.98ms[39m [36m./utils[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/src/components/ui/utils.ts[22m
+2025-11-01T08:33:34.373Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.374Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.375Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.376Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.376Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.376Z vite:hmr [self-accepts] [2msrc/components/ui/button.tsx[22m
+2025-11-01T08:33:34.377Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/@radix-ui_react-slot@1__1__2.js[39m
+2025-11-01T08:33:34.377Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/class-variance-authority@0__7__1.js[39m
+2025-11-01T08:33:34.378Z vite:import-analysis [32m7.13ms[39m [2m[6 imports rewritten] [2msrc/components/ui/button.tsx[22m[2m[22m
+2025-11-01T08:33:34.378Z vite:transform [33m16.02ms[39m [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:34.380Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.381Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.382Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.382Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.383Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.383Z vite:hmr [self-accepts] [2msrc/components/ui/card.tsx[22m
+2025-11-01T08:33:34.384Z vite:import-analysis [32m4.82ms[39m [2m[4 imports rewritten] [2msrc/components/ui/card.tsx[22m[2m[22m
+2025-11-01T08:33:34.384Z vite:transform [33m21.55ms[39m [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:34.385Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.386Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.387Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.387Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.388Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.388Z vite:hmr [self-accepts] [2msrc/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:34.389Z vite:import-analysis [32m3.59ms[39m [2m[3 imports rewritten] [2msrc/components/figma/ImageWithFallback.tsx[22m[2m[22m
+2025-11-01T08:33:34.389Z vite:transform [33m25.78ms[39m [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:34.389Z vite:load [31m100.39ms[39m [plugin] [2m/node_modules/.vite/deps/lucide-react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.410Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.410Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.411Z vite:import-analysis [33m17.51ms[39m [2m[2 imports rewritten] [2mnode_modules/.vite/deps/lucide-react.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.411Z vite:transform [33m21.12ms[39m [2m/node_modules/.vite/deps/lucide-react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.414Z vite:resolve [32m0.11ms[39m [36m@supabase/supabase-js[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/@supabase_supabase-js.js?v=8264e7fe[22m
+2025-11-01T08:33:34.415Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/@supabase_supabase-js.js[39m
+2025-11-01T08:33:34.416Z vite:import-analysis [32m2.31ms[39m [2m[1 imports rewritten] [2msrc/lib/supabaseClient.ts[22m[2m[22m
+2025-11-01T08:33:34.416Z vite:transform [31m52.62ms[39m [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:34.418Z vite:cache [memory] [2m/node_modules/.vite/deps/react-dom_client.js?v=8264e7fe[22m
+2025-11-01T08:33:34.419Z vite:time [32m0.61ms[39m [2m/node_modules/.vite/deps/react-dom_client.js?v=8264e7fe[22m
+2025-11-01T08:33:34.422Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.422Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.423Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.424Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.424Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.424Z vite:hmr [self-accepts] [2msrc/components/ui/input.tsx[22m
+2025-11-01T08:33:34.425Z vite:import-analysis [32m4.49ms[39m [2m[4 imports rewritten] [2msrc/components/ui/input.tsx[22m[2m[22m
+2025-11-01T08:33:34.425Z vite:transform [31m56.53ms[39m [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:34.427Z vite:resolve [32m0.16ms[39m [36m@radix-ui/react-label@2.1.2[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/@radix-ui_react-label@2__1__2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.428Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.429Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.429Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.430Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.430Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.431Z vite:hmr [self-accepts] [2msrc/components/ui/label.tsx[22m
+2025-11-01T08:33:34.431Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/@radix-ui_react-label@2__1__2.js[39m
+2025-11-01T08:33:34.432Z vite:import-analysis [32m5.52ms[39m [2m[5 imports rewritten] [2msrc/components/ui/label.tsx[22m[2m[22m
+2025-11-01T08:33:34.432Z vite:transform [31m62.73ms[39m [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:34.434Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:33:34.435Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.436Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:33:34.436Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:33:34.436Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:34.437Z vite:hmr [self-accepts] [2msrc/components/ui/textarea.tsx[22m
+2025-11-01T08:33:34.437Z vite:import-analysis [32m4.10ms[39m [2m[4 imports rewritten] [2msrc/components/ui/textarea.tsx[22m[2m[22m
+2025-11-01T08:33:34.438Z vite:transform [31m67.50ms[39m [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:34.440Z vite:html-fallback Rewriting GET / to /index.html
+2025-11-01T08:33:34.442Z vite:cache [memory] [2m/src/App.tsx[22m
+2025-11-01T08:33:34.443Z vite:time [32m0.95ms[39m [2m/src/App.tsx[22m
+2025-11-01T08:33:34.445Z vite:cache [memory] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.446Z vite:time [31m86.55ms[39m [2m/index.html[22m
+2025-11-01T08:33:34.450Z vite:load [31m73.82ms[39m [plugin] [2m/node_modules/.vite/deps/@radix-ui_react-slot@1__1__2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.452Z vite:resolve [32m0.35ms[39m [36m./chunk-WGZG5SE2.js[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-WGZG5SE2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.452Z vite:resolve [32m0.86ms[39m [36m./chunk-NRBATONI.js[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-NRBATONI.js?v=8264e7fe[22m
+2025-11-01T08:33:34.453Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.454Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.454Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-WGZG5SE2.js[39m
+2025-11-01T08:33:34.454Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-NRBATONI.js[39m
+2025-11-01T08:33:34.455Z vite:import-analysis [32m3.60ms[39m [2m[4 imports rewritten] [2mnode_modules/.vite/deps/@radix-ui_react-slot@1__1__2.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.455Z vite:transform [32m4.48ms[39m [2m/node_modules/.vite/deps/@radix-ui_react-slot@1__1__2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.456Z vite:load [31m78.46ms[39m [fs] [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:34.457Z vite:load [31m80.04ms[39m [plugin] [2m/node_modules/.vite/deps/class-variance-authority@0__7__1.js?v=8264e7fe[22m
+2025-11-01T08:33:34.458Z vite:resolve [32m0.24ms[39m [36m./chunk-U7P2NEEE.js[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-U7P2NEEE.js?v=8264e7fe[22m
+2025-11-01T08:33:34.458Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.459Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-U7P2NEEE.js[39m
+2025-11-01T08:33:34.459Z vite:import-analysis [32m2.19ms[39m [2m[2 imports rewritten] [2mnode_modules/.vite/deps/class-variance-authority@0__7__1.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.460Z vite:transform [32m2.79ms[39m [2m/node_modules/.vite/deps/class-variance-authority@0__7__1.js?v=8264e7fe[22m
+2025-11-01T08:33:34.461Z vite:load [33m45.31ms[39m [plugin] [2m/node_modules/.vite/deps/@supabase_supabase-js.js?v=8264e7fe[22m
+2025-11-01T08:33:34.469Z vite:resolve [32m0.47ms[39m [36m./chunk-5H4R2CZR.js[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-5H4R2CZR.js?v=8264e7fe[22m
+2025-11-01T08:33:34.470Z vite:resolve [32m1.03ms[39m [36m./browser-EMB7CRMN.js[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/browser-EMB7CRMN.js?v=8264e7fe[22m
+2025-11-01T08:33:34.471Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.471Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/chunk-5H4R2CZR.js[39m
+2025-11-01T08:33:34.472Z vite:import-analysis [32m9.67ms[39m [2m[3 imports rewritten] [2mnode_modules/.vite/deps/@supabase_supabase-js.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.472Z vite:transform [33m11.40ms[39m [2m/node_modules/.vite/deps/@supabase_supabase-js.js?v=8264e7fe[22m
+2025-11-01T08:33:34.476Z vite:load [33m44.91ms[39m [plugin] [2m/node_modules/.vite/deps/@radix-ui_react-label@2__1__2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.478Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-AP6GYKF3.js?v=8264e7fe[22m
+2025-11-01T08:33:34.478Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.479Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.479Z vite:import-analysis [32m2.32ms[39m [2m[5 imports rewritten] [2mnode_modules/.vite/deps/@radix-ui_react-label@2__1__2.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.480Z vite:transform [32m2.98ms[39m [2m/node_modules/.vite/deps/@radix-ui_react-label@2__1__2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.484Z vite:resolve [32m0.15ms[39m [36mclsx[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/clsx.js?v=8264e7fe[22m
+2025-11-01T08:33:34.484Z vite:resolve [32m0.67ms[39m [36mtailwind-merge[39m -> [2mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/tailwind-merge.js?v=8264e7fe[22m
+2025-11-01T08:33:34.485Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/clsx.js[39m
+2025-11-01T08:33:34.485Z vite:optimize-deps load [36mC:/Users/brian/Desktop/B.U.D/Traditional_Market_Food_Order_MVP/node_modules/.vite/deps/tailwind-merge.js[39m
+2025-11-01T08:33:34.486Z vite:import-analysis [32m2.58ms[39m [2m[2 imports rewritten] [2msrc/components/ui/utils.ts[22m[2m[22m
+2025-11-01T08:33:34.486Z vite:transform [33m30.00ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:34.488Z vite:cache [memory] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.489Z vite:time [33m48.66ms[39m [2m/index.html[22m
+2025-11-01T08:33:34.499Z vite:cache [memory] [2m/@vite/client[22m
+2025-11-01T08:33:34.499Z vite:time [32m0.94ms[39m [2m/@vite/client[22m
+2025-11-01T08:33:34.547Z vite:html-fallback Rewriting GET / to /index.html
+2025-11-01T08:33:34.560Z vite:cache [304] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.561Z vite:time [32m0.54ms[39m [2m/src/main.tsx[22m
+2025-11-01T08:33:34.562Z vite:load [31m108.35ms[39m [plugin] [2m/node_modules/.vite/deps/chunk-WGZG5SE2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.564Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.564Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.564Z vite:import-analysis [32m1.46ms[39m [2m[3 imports rewritten] [2mnode_modules/.vite/deps/chunk-WGZG5SE2.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.565Z vite:transform [32m2.44ms[39m [2m/node_modules/.vite/deps/chunk-WGZG5SE2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.566Z vite:load [31m111.86ms[39m [plugin] [2m/node_modules/.vite/deps/chunk-NRBATONI.js?v=8264e7fe[22m
+2025-11-01T08:33:34.568Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.568Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.569Z vite:import-analysis [32m2.08ms[39m [2m[2 imports rewritten] [2mnode_modules/.vite/deps/chunk-NRBATONI.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.569Z vite:transform [32m2.88ms[39m [2m/node_modules/.vite/deps/chunk-NRBATONI.js?v=8264e7fe[22m
+2025-11-01T08:33:34.570Z vite:load [31m111.03ms[39m [plugin] [2m/node_modules/.vite/deps/chunk-U7P2NEEE.js?v=8264e7fe[22m
+2025-11-01T08:33:34.571Z vite:import-analysis [32m0.05ms[39m [2m[no imports] [2mnode_modules/.vite/deps/chunk-U7P2NEEE.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.571Z vite:transform [32m0.84ms[39m[2m [skipped] [2m/node_modules/.vite/deps/chunk-U7P2NEEE.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.572Z vite:load [31m100.77ms[39m [plugin] [2m/node_modules/.vite/deps/chunk-5H4R2CZR.js?v=8264e7fe[22m
+2025-11-01T08:33:34.573Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.574Z vite:import-analysis [32m0.95ms[39m [2m[1 imports rewritten] [2mnode_modules/.vite/deps/chunk-5H4R2CZR.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.574Z vite:transform [32m1.61ms[39m [2m/node_modules/.vite/deps/chunk-5H4R2CZR.js?v=8264e7fe[22m
+2025-11-01T08:33:34.575Z vite:cache [304] [2m/@react-refresh[22m
+2025-11-01T08:33:34.575Z vite:time [32m0.33ms[39m [2m/@react-refresh[22m
+2025-11-01T08:33:34.576Z vite:load [31m91.48ms[39m [plugin] [2m/node_modules/.vite/deps/clsx.js?v=8264e7fe[22m
+2025-11-01T08:33:34.578Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-U7P2NEEE.js?v=8264e7fe[22m
+2025-11-01T08:33:34.578Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.578Z vite:import-analysis [32m1.24ms[39m [2m[2 imports rewritten] [2mnode_modules/.vite/deps/clsx.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.579Z vite:transform [32m1.81ms[39m [2m/node_modules/.vite/deps/clsx.js?v=8264e7fe[22m
+2025-11-01T08:33:34.579Z vite:load [31m94.20ms[39m [plugin] [2m/node_modules/.vite/deps/tailwind-merge.js?v=8264e7fe[22m
+2025-11-01T08:33:34.582Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:34.583Z vite:import-analysis [32m2.29ms[39m [2m[1 imports rewritten] [2mnode_modules/.vite/deps/tailwind-merge.js?v=8264e7fe[22m[2m[22m
+2025-11-01T08:33:34.583Z vite:transform [32m3.44ms[39m [2m/node_modules/.vite/deps/tailwind-merge.js?v=8264e7fe[22m
+2025-11-01T08:33:34.586Z vite:cache [memory] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.586Z vite:time [33m39.24ms[39m [2m/index.html[22m
+2025-11-01T08:33:34.593Z vite:html-fallback Rewriting GET / to /index.html
+2025-11-01T08:33:34.600Z vite:cache [memory] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.601Z vite:time [32m8.14ms[39m [2m/index.html[22m
+2025-11-01T08:33:34.607Z vite:html-fallback Rewriting GET / to /index.html
+2025-11-01T08:33:34.609Z vite:cache [304] [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:34.609Z vite:time [32m0.44ms[39m [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:34.617Z vite:cache [memory] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.618Z vite:time [33m10.50ms[39m [2m/index.html[22m
+2025-11-01T08:33:34.620Z vite:html-fallback Rewriting GET / to /index.html
+2025-11-01T08:33:34.622Z vite:cache [memory] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.622Z vite:time [32m3.16ms[39m [2m/index.html[22m
+2025-11-01T08:33:34.630Z vite:hmr [self-accepts] [2msrc/index.css[22m
+2025-11-01T08:33:34.631Z vite:import-analysis [32m1.26ms[39m [2m[0 imports rewritten] [2msrc/index.css[22m[2m[22m
+2025-11-01T08:33:34.631Z vite:transform [31m525.45ms[39m [2m/src/index.css[22m
+2025-11-01T08:33:34.632Z vite:time [33m23.61ms[39m [2m/src/index.css[22m
+2025-11-01T08:33:34.754Z vite:cache [304] [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:34.754Z vite:time [32m0.71ms[39m [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:34.755Z vite:cache [memory] [2m/@vite/client[22m
+2025-11-01T08:33:34.756Z vite:time [32m0.58ms[39m [2m/@vite/client[22m
+2025-11-01T08:33:34.856Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.865Z vite:time [32m9.32ms[39m [2m/node_modules/.vite/deps/chunk-QJTFJ6OV.js?v=8264e7fe[22m
+2025-11-01T08:33:34.867Z vite:cache [304] [2m/src/main.tsx[22m
+2025-11-01T08:33:34.868Z vite:time [32m0.57ms[39m [2m/src/main.tsx[22m
+2025-11-01T08:33:34.869Z vite:cache [304] [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:34.869Z vite:time [32m0.47ms[39m [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:34.919Z vite:cache [304] [2m/@react-refresh[22m
+2025-11-01T08:33:34.920Z vite:time [32m0.64ms[39m [2m/@react-refresh[22m
+2025-11-01T08:33:34.955Z vite:cache [memory] [2m/@vite/client[22m
+2025-11-01T08:33:34.955Z vite:time [32m0.92ms[39m [2m/@vite/client[22m
+2025-11-01T08:33:35.138Z vite:cache [304] [2m/src/main.tsx[22m
+2025-11-01T08:33:35.140Z vite:time [32m2.28ms[39m [2m/src/main.tsx[22m
+2025-11-01T08:33:35.232Z vite:cache [304] [2m/src/App.tsx[22m
+2025-11-01T08:33:35.241Z vite:time [32m8.86ms[39m [2m/src/App.tsx[22m
+2025-11-01T08:33:35.244Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:35.245Z vite:time [32m1.38ms[39m [2m/node_modules/.vite/deps/chunk-V4OQ3NZ2.js?v=8264e7fe[22m
+2025-11-01T08:33:35.248Z vite:cache [304] [2m/@react-refresh[22m
+2025-11-01T08:33:35.248Z vite:time [32m0.50ms[39m [2m/@react-refresh[22m
+2025-11-01T08:33:35.250Z vite:cache [memory] [2m/@vite/client[22m
+2025-11-01T08:33:35.250Z vite:time [32m0.83ms[39m [2m/@vite/client[22m
+2025-11-01T08:33:35.254Z vite:cache [memory] [2m/@vite/client[22m
+2025-11-01T08:33:35.254Z vite:time [32m0.78ms[39m [2m/@vite/client[22m
+2025-11-01T08:33:35.255Z vite:cache [304] [2m/src/index.css[22m
+2025-11-01T08:33:35.256Z vite:time [32m0.52ms[39m [2m/src/index.css[22m
+2025-11-01T08:33:35.257Z vite:cache [304] [2m/src/main.tsx[22m
+2025-11-01T08:33:35.257Z vite:time [32m0.44ms[39m [2m/src/main.tsx[22m
+2025-11-01T08:33:35.258Z vite:cache [memory] [2m/@vite/client[22m
+2025-11-01T08:33:35.258Z vite:time [32m0.54ms[39m [2m/@vite/client[22m
+2025-11-01T08:33:35.262Z vite:cache [memory] [2m/@vite/client[22m
+2025-11-01T08:33:35.263Z vite:time [32m0.89ms[39m [2m/@vite/client[22m
+2025-11-01T08:33:35.264Z vite:cache [304] [2m/@react-refresh[22m
+2025-11-01T08:33:35.264Z vite:time [32m0.55ms[39m [2m/@react-refresh[22m
+2025-11-01T08:33:35.268Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-AP6GYKF3.js?v=8264e7fe[22m
+2025-11-01T08:33:35.271Z vite:time [32m3.21ms[39m [2m/node_modules/.vite/deps/chunk-AP6GYKF3.js?v=8264e7fe[22m
+2025-11-01T08:33:35.280Z vite:cache [304] [2m/src/main.tsx[22m
+2025-11-01T08:33:35.281Z vite:time [32m0.89ms[39m [2m/src/main.tsx[22m
+2025-11-01T08:33:35.283Z vite:cache [304] [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.284Z vite:time [32m1.28ms[39m [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.286Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:35.287Z vite:time [32m1.07ms[39m [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:33:35.288Z vite:cache [304] [2m/@react-refresh[22m
+2025-11-01T08:33:35.289Z vite:time [32m0.43ms[39m [2m/@react-refresh[22m
+2025-11-01T08:33:35.289Z vite:cache [304] [2m/src/App.tsx[22m
+2025-11-01T08:33:35.290Z vite:time [32m0.40ms[39m [2m/src/App.tsx[22m
+2025-11-01T08:33:35.291Z vite:cache [304] [2m/src/main.tsx[22m
+2025-11-01T08:33:35.291Z vite:time [32m0.41ms[39m [2m/src/main.tsx[22m
+2025-11-01T08:33:35.292Z vite:cache [304] [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.292Z vite:time [32m0.40ms[39m [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.293Z vite:cache [304] [2m/@react-refresh[22m
+2025-11-01T08:33:35.293Z vite:time [32m0.39ms[39m [2m/@react-refresh[22m
+2025-11-01T08:33:35.294Z vite:cache [304] [2m/src/main.tsx[22m
+2025-11-01T08:33:35.294Z vite:time [32m0.44ms[39m [2m/src/main.tsx[22m
+2025-11-01T08:33:35.296Z vite:cache [304] [2m/@react-refresh[22m
+2025-11-01T08:33:35.296Z vite:time [32m0.52ms[39m [2m/@react-refresh[22m
+2025-11-01T08:33:35.305Z vite:cache [304] [2m/src/index.css[22m
+2025-11-01T08:33:35.306Z vite:time [32m0.80ms[39m [2m/src/index.css[22m
+2025-11-01T08:33:35.323Z vite:cache [memory] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.324Z vite:time [32m1.16ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.325Z vite:cache [304] [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.326Z vite:time [32m0.57ms[39m [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.327Z vite:cache [304] [2m/src/App.tsx[22m
+2025-11-01T08:33:35.327Z vite:time [32m0.42ms[39m [2m/src/App.tsx[22m
+2025-11-01T08:33:35.328Z vite:cache [304] [2m/src/index.css[22m
+2025-11-01T08:33:35.328Z vite:time [32m0.49ms[39m [2m/src/index.css[22m
+2025-11-01T08:33:35.329Z vite:cache [memory] [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.330Z vite:time [32m0.83ms[39m [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.331Z vite:cache [304] [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.332Z vite:time [32m0.49ms[39m [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.341Z vite:cache [304] [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.342Z vite:time [32m0.61ms[39m [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.343Z vite:cache [304] [2m/src/App.tsx[22m
+2025-11-01T08:33:35.343Z vite:time [32m0.47ms[39m [2m/src/App.tsx[22m
+2025-11-01T08:33:35.344Z vite:cache [304] [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.344Z vite:time [32m0.45ms[39m [2m/node_modules/vite/dist/client/env.mjs[22m
+2025-11-01T08:33:35.357Z vite:cache [memory] [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.358Z vite:time [32m1.38ms[39m [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.360Z vite:cache [304] [2m/src/index.css[22m
+2025-11-01T08:33:35.360Z vite:time [32m0.74ms[39m [2m/src/index.css[22m
+2025-11-01T08:33:35.363Z vite:cache [304] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.364Z vite:time [32m0.56ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.370Z vite:cache [304] [2m/src/App.tsx[22m
+2025-11-01T08:33:35.370Z vite:time [32m0.74ms[39m [2m/src/App.tsx[22m
+2025-11-01T08:33:35.374Z vite:cache [304] [2m/src/App.tsx[22m
+2025-11-01T08:33:35.375Z vite:time [32m0.65ms[39m [2m/src/App.tsx[22m
+2025-11-01T08:33:35.376Z vite:cache [304] [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.376Z vite:time [32m0.52ms[39m [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.377Z vite:cache [memory] [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.378Z vite:time [32m0.94ms[39m [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.379Z vite:cache [304] [2m/src/index.css[22m
+2025-11-01T08:33:35.380Z vite:time [32m0.65ms[39m [2m/src/index.css[22m
+2025-11-01T08:33:35.381Z vite:cache [304] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.381Z vite:time [32m0.42ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.388Z vite:cache [304] [2m/src/index.css[22m
+2025-11-01T08:33:35.389Z vite:time [32m0.71ms[39m [2m/src/index.css[22m
+2025-11-01T08:33:35.390Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.391Z vite:time [32m1.02ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.393Z vite:cache [304] [2m/src/App.tsx[22m
+2025-11-01T08:33:35.393Z vite:time [32m0.51ms[39m [2m/src/App.tsx[22m
+2025-11-01T08:33:35.394Z vite:cache [304] [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.395Z vite:time [32m0.50ms[39m [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.396Z vite:cache [304] [2m/src/index.css[22m
+2025-11-01T08:33:35.396Z vite:time [32m0.58ms[39m [2m/src/index.css[22m
+2025-11-01T08:33:35.397Z vite:cache [304] [2m/src/App.tsx[22m
+2025-11-01T08:33:35.397Z vite:time [32m0.44ms[39m [2m/src/App.tsx[22m
+2025-11-01T08:33:35.399Z vite:cache [304] [2m/src/index.css[22m
+2025-11-01T08:33:35.399Z vite:time [32m0.66ms[39m [2m/src/index.css[22m
+2025-11-01T08:33:35.404Z vite:cache [304] [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.404Z vite:time [32m0.60ms[39m [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.405Z vite:cache [304] [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.405Z vite:time [32m0.48ms[39m [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.411Z vite:cache [304] [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.412Z vite:time [32m0.71ms[39m [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.413Z vite:cache [304] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.413Z vite:time [32m0.51ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.421Z vite:cache [304] [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.421Z vite:time [32m0.73ms[39m [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.423Z vite:cache [304] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.423Z vite:time [32m0.60ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.426Z vite:cache [memory] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.427Z vite:time [32m0.97ms[39m [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.428Z vite:cache [304] [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.428Z vite:time [32m0.51ms[39m [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.429Z vite:cache [304] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.430Z vite:time [32m0.48ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.430Z vite:cache [304] [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.431Z vite:time [32m0.46ms[39m [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.432Z vite:cache [memory] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.433Z vite:time [32m1.00ms[39m [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.441Z vite:cache [304] [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.442Z vite:time [32m0.68ms[39m [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.443Z vite:cache [304] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.443Z vite:time [32m0.43ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.453Z vite:cache [memory] [2m/node_modules/.vite/deps/lucide-react.js?v=8264e7fe[22m
+2025-11-01T08:33:35.455Z vite:time [32m1.73ms[39m [2m/node_modules/.vite/deps/lucide-react.js?v=8264e7fe[22m
+2025-11-01T08:33:35.458Z vite:cache [304] [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.459Z vite:time [32m0.72ms[39m [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.460Z vite:cache [304] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.461Z vite:time [32m0.52ms[39m [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.463Z vite:cache [304] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.463Z vite:time [32m0.55ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.464Z vite:cache [304] [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.464Z vite:time [32m0.51ms[39m [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.465Z vite:cache [304] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.466Z vite:time [32m0.47ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.467Z vite:cache [304] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.468Z vite:time [32m0.70ms[39m [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.469Z vite:cache [304] [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.469Z vite:time [32m0.52ms[39m [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.471Z vite:cache [304] [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.471Z vite:time [32m0.63ms[39m [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.472Z vite:cache [304] [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.473Z vite:time [32m0.47ms[39m [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.476Z vite:cache [memory] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.477Z vite:time [32m0.82ms[39m [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.478Z vite:cache [304] [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.478Z vite:time [32m0.47ms[39m [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.479Z vite:cache [304] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.480Z vite:time [32m0.42ms[39m [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.480Z vite:cache [304] [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.481Z vite:time [32m0.44ms[39m [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.482Z vite:cache [304] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.482Z vite:time [32m0.46ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.483Z vite:cache [304] [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.483Z vite:time [32m0.54ms[39m [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.485Z vite:cache [memory] [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.485Z vite:time [32m0.80ms[39m [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.488Z vite:cache [304] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.488Z vite:time [32m0.48ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.489Z vite:cache [304] [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.489Z vite:time [32m0.49ms[39m [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.490Z vite:cache [304] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.491Z vite:time [32m0.47ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:33:35.492Z vite:cache [304] [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.492Z vite:time [32m0.48ms[39m [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.493Z vite:cache [304] [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.493Z vite:time [32m0.46ms[39m [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.494Z vite:cache [304] [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.495Z vite:time [32m0.50ms[39m [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.498Z vite:cache [304] [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.498Z vite:time [32m0.59ms[39m [2m/src/components/MarketSelection.tsx[22m
+2025-11-01T08:33:35.499Z vite:cache [304] [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.500Z vite:time [32m0.57ms[39m [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.501Z vite:cache [304] [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.502Z vite:time [32m0.55ms[39m [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.511Z vite:cache [304] [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.512Z vite:time [32m0.60ms[39m [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.513Z vite:cache [304] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.513Z vite:time [32m0.44ms[39m [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.514Z vite:cache [304] [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.514Z vite:time [32m0.41ms[39m [2m/src/components/MenuList.tsx[22m
+2025-11-01T08:33:35.515Z vite:cache [304] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.516Z vite:time [32m0.44ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.516Z vite:cache [304] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.517Z vite:time [32m0.45ms[39m [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.518Z vite:cache [304] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.518Z vite:time [32m0.47ms[39m [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.519Z vite:cache [304] [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.520Z vite:time [32m0.43ms[39m [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.520Z vite:cache [304] [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.521Z vite:time [32m0.48ms[39m [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.525Z vite:cache [304] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.525Z vite:time [32m0.67ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.526Z vite:cache [memory] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.527Z vite:time [32m0.76ms[39m [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.528Z vite:cache [304] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.528Z vite:time [32m0.46ms[39m [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.529Z vite:cache [304] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.530Z vite:time [32m0.44ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.531Z vite:cache [304] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.531Z vite:time [32m0.45ms[39m [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.532Z vite:cache [304] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.533Z vite:time [32m0.51ms[39m [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.534Z vite:cache [memory] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.535Z vite:time [32m0.81ms[39m [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.536Z vite:cache [304] [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.536Z vite:time [32m0.50ms[39m [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.537Z vite:cache [304] [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.538Z vite:time [32m0.46ms[39m [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.538Z vite:cache [304] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.539Z vite:time [32m0.48ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.540Z vite:cache [304] [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.540Z vite:time [32m0.51ms[39m [2m/src/components/MenuDetail.tsx[22m
+2025-11-01T08:33:35.545Z vite:cache [304] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.546Z vite:time [32m0.65ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:33:35.547Z vite:cache [304] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.547Z vite:time [32m0.57ms[39m [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.548Z vite:cache [304] [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.549Z vite:time [32m0.52ms[39m [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.550Z vite:cache [304] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.550Z vite:time [32m0.52ms[39m [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.552Z vite:cache [memory] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.552Z vite:time [32m0.96ms[39m [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.553Z vite:cache [304] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.554Z vite:time [32m0.46ms[39m [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.555Z vite:cache [304] [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.555Z vite:time [32m0.49ms[39m [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.557Z vite:cache [304] [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.557Z vite:time [32m0.43ms[39m [2m/src/services/marketService.ts[22m
+2025-11-01T08:33:35.558Z vite:cache [304] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.559Z vite:time [32m0.34ms[39m [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.559Z vite:cache [304] [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.560Z vite:time [32m0.34ms[39m [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.560Z vite:cache [304] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.561Z vite:time [32m0.43ms[39m [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.562Z vite:cache [304] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.562Z vite:time [32m0.38ms[39m [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.572Z vite:cache [304] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.573Z vite:time [32m0.59ms[39m [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.574Z vite:cache [memory] [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.574Z vite:time [32m0.67ms[39m [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.575Z vite:cache [304] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.575Z vite:time [32m0.38ms[39m [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.576Z vite:cache [304] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.576Z vite:time [32m0.43ms[39m [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.578Z vite:cache [memory] [2m/node_modules/.vite/deps/@radix-ui_react-slot@1__1__2.js?v=8264e7fe[22m
+2025-11-01T08:33:35.578Z vite:time [32m0.85ms[39m [2m/node_modules/.vite/deps/@radix-ui_react-slot@1__1__2.js?v=8264e7fe[22m
+2025-11-01T08:33:35.579Z vite:cache [304] [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.579Z vite:time [32m0.53ms[39m [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.580Z vite:cache [304] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.581Z vite:time [32m0.46ms[39m [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.582Z vite:cache [304] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.582Z vite:time [32m0.42ms[39m [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.583Z vite:cache [304] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.583Z vite:time [32m0.42ms[39m [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.589Z vite:cache [304] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.589Z vite:time [32m0.62ms[39m [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.590Z vite:cache [304] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.591Z vite:time [32m0.49ms[39m [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:33:35.592Z vite:cache [304] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.592Z vite:time [32m0.47ms[39m [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.593Z vite:cache [304] [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.593Z vite:time [32m0.48ms[39m [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.594Z vite:cache [memory] [2m/node_modules/.vite/deps/class-variance-authority@0__7__1.js?v=8264e7fe[22m
+2025-11-01T08:33:35.595Z vite:time [32m0.76ms[39m [2m/node_modules/.vite/deps/class-variance-authority@0__7__1.js?v=8264e7fe[22m
+2025-11-01T08:33:35.596Z vite:cache [304] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.597Z vite:time [32m0.57ms[39m [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:33:35.598Z vite:cache [304] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.598Z vite:time [32m0.47ms[39m [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.605Z vite:cache [304] [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.606Z vite:time [32m0.67ms[39m [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.607Z vite:cache [304] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.607Z vite:time [32m0.47ms[39m [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.608Z vite:cache [304] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.608Z vite:time [32m0.52ms[39m [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.609Z vite:cache [304] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.610Z vite:time [32m0.47ms[39m [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.621Z vite:cache [304] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.621Z vite:time [32m0.89ms[39m [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.623Z vite:cache [304] [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.624Z vite:time [32m0.91ms[39m [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.626Z vite:cache [memory] [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.627Z vite:time [32m1.84ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.628Z vite:cache [304] [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.628Z vite:time [32m0.51ms[39m [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.629Z vite:cache [304] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.630Z vite:time [32m0.39ms[39m [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.631Z vite:cache [304] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.632Z vite:time [32m0.72ms[39m [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.634Z vite:cache [memory] [2m/node_modules/.vite/deps/@radix-ui_react-label@2__1__2.js?v=8264e7fe[22m
+2025-11-01T08:33:35.635Z vite:time [32m1.84ms[39m [2m/node_modules/.vite/deps/@radix-ui_react-label@2__1__2.js?v=8264e7fe[22m
+2025-11-01T08:33:35.636Z vite:cache [304] [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.636Z vite:time [32m0.44ms[39m [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.637Z vite:cache [304] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.638Z vite:time [32m0.39ms[39m [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.642Z vite:cache [304] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.643Z vite:time [32m0.69ms[39m [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:33:35.644Z vite:cache [304] [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.644Z vite:time [32m0.41ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.645Z vite:cache [304] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.646Z vite:time [32m0.51ms[39m [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.647Z vite:cache [304] [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.648Z vite:time [32m1.20ms[39m [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.649Z vite:cache [memory] [2m/node_modules/.vite/deps/@supabase_supabase-js.js?v=8264e7fe[22m
+2025-11-01T08:33:35.651Z vite:time [32m1.34ms[39m [2m/node_modules/.vite/deps/@supabase_supabase-js.js?v=8264e7fe[22m
+2025-11-01T08:33:35.656Z vite:cache [304] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.657Z vite:time [32m1.05ms[39m [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.658Z vite:cache [304] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.658Z vite:time [32m0.44ms[39m [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.659Z vite:cache [304] [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.659Z vite:time [32m0.46ms[39m [2m/src/components/figma/ImageWithFallback.tsx[22m
+2025-11-01T08:33:35.661Z vite:cache [304] [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.662Z vite:time [32m0.62ms[39m [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.665Z vite:cache [304] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.666Z vite:time [32m0.92ms[39m [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.667Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-WGZG5SE2.js?v=8264e7fe[22m
+2025-11-01T08:33:35.668Z vite:time [32m1.22ms[39m [2m/node_modules/.vite/deps/chunk-WGZG5SE2.js?v=8264e7fe[22m
+2025-11-01T08:33:35.669Z vite:cache [304] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.670Z vite:time [32m0.53ms[39m [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.671Z vite:cache [304] [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.671Z vite:time [32m0.49ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.672Z vite:cache [304] [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.673Z vite:time [32m0.44ms[39m [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.674Z vite:cache [304] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.674Z vite:time [32m0.49ms[39m [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.688Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-NRBATONI.js?v=8264e7fe[22m
+2025-11-01T08:33:35.689Z vite:time [32m1.33ms[39m [2m/node_modules/.vite/deps/chunk-NRBATONI.js?v=8264e7fe[22m
+2025-11-01T08:33:35.691Z vite:cache [304] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.692Z vite:time [32m0.78ms[39m [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:33:35.693Z vite:cache [304] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.693Z vite:time [32m0.45ms[39m [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.694Z vite:cache [304] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.694Z vite:time [32m0.48ms[39m [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.695Z vite:cache [304] [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.696Z vite:time [32m0.42ms[39m [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.697Z vite:cache [304] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.697Z vite:time [32m0.47ms[39m [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.703Z vite:cache [304] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.704Z vite:time [32m0.66ms[39m [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.705Z vite:cache [304] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.705Z vite:time [32m0.51ms[39m [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:33:35.706Z vite:cache [304] [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.706Z vite:time [32m0.51ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.708Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-U7P2NEEE.js?v=8264e7fe[22m
+2025-11-01T08:33:35.708Z vite:time [32m0.74ms[39m [2m/node_modules/.vite/deps/chunk-U7P2NEEE.js?v=8264e7fe[22m
+2025-11-01T08:33:35.709Z vite:cache [304] [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.709Z vite:time [32m0.46ms[39m [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.713Z vite:cache [memory] [2m/node_modules/.vite/deps/clsx.js?v=8264e7fe[22m
+2025-11-01T08:33:35.714Z vite:time [32m0.93ms[39m [2m/node_modules/.vite/deps/clsx.js?v=8264e7fe[22m
+2025-11-01T08:33:35.715Z vite:cache [304] [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.715Z vite:time [32m0.48ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.716Z vite:cache [304] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.717Z vite:time [32m0.42ms[39m [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.718Z vite:cache [304] [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.718Z vite:time [32m0.54ms[39m [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.719Z vite:cache [304] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.720Z vite:time [32m0.54ms[39m [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:33:35.728Z vite:cache [memory] [2m/node_modules/.vite/deps/tailwind-merge.js?v=8264e7fe[22m
+2025-11-01T08:33:35.729Z vite:time [32m0.96ms[39m [2m/node_modules/.vite/deps/tailwind-merge.js?v=8264e7fe[22m
+2025-11-01T08:33:35.730Z vite:cache [304] [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.730Z vite:time [32m0.48ms[39m [2m/src/lib/supabaseClient.ts[22m
+2025-11-01T08:33:35.737Z vite:cache [304] [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.738Z vite:time [32m0.71ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.752Z vite:cache [memory] [2m/node_modules/.vite/deps/chunk-5H4R2CZR.js?v=8264e7fe[22m
+2025-11-01T08:33:35.753Z vite:time [32m0.84ms[39m [2m/node_modules/.vite/deps/chunk-5H4R2CZR.js?v=8264e7fe[22m
+2025-11-01T08:33:35.754Z vite:cache [304] [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.754Z vite:time [32m0.55ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.758Z vite:cache [304] [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.759Z vite:time [32m0.72ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.763Z vite:cache [304] [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:33:35.763Z vite:time [32m0.56ms[39m [2m/src/components/ui/utils.ts[22m
+2025-11-01T08:37:46.588Z vite:hmr [file change] [2msrc/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.591Z vite:hmr (ssr) [no modules matched] [2msrc/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.604Z vite:load [32m1.28ms[39m [fs] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.609Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:37:46.609Z vite:cache [memory] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:37:46.610Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:37:46.610Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:37:46.611Z vite:cache [memory] [2m/node_modules/.vite/deps/lucide-react.js?v=8264e7fe[22m
+2025-11-01T08:37:46.611Z vite:hmr [self-accepts] [2msrc/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.611Z vite:import-analysis [32m4.24ms[39m [2m[4 imports rewritten] [2msrc/components/MainScreen.tsx[22m[2m[22m
+2025-11-01T08:37:46.612Z vite:transform [32m7.31ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.613Z vite:time [33m10.42ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.616Z vite:cache [memory] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.617Z vite:time [32m0.85ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.619Z vite:cache [memory] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.620Z vite:time [32m0.81ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.622Z vite:cache [memory] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.622Z vite:time [32m0.69ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.624Z vite:cache [memory] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.625Z vite:time [32m0.93ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.627Z vite:cache [memory] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.627Z vite:time [32m1.09ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.629Z vite:cache [memory] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.630Z vite:time [32m0.78ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.633Z vite:cache [memory] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.634Z vite:time [32m2.23ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.636Z vite:cache [memory] [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:37:46.637Z vite:time [32m0.73ms[39m [2m/src/components/MainScreen.tsx[22m
+2025-11-01T08:38:02.694Z vite:hmr [file change] [2msrc/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.696Z vite:hmr (ssr) [no modules matched] [2msrc/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.704Z vite:load [32m1.44ms[39m [fs] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.720Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:38:02.722Z vite:cache [memory] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:38:02.723Z vite:cache [memory] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:38:02.723Z vite:cache [memory] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:38:02.724Z vite:cache [memory] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:38:02.724Z vite:cache [memory] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:38:02.725Z vite:cache [memory] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:38:02.725Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:38:02.726Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:38:02.726Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:38:02.726Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:38:02.727Z vite:cache [memory] [2m/node_modules/.vite/deps/lucide-react.js?v=8264e7fe[22m
+2025-11-01T08:38:02.727Z vite:hmr [self-accepts] [2msrc/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.728Z vite:import-analysis [33m13.63ms[39m [2m[10 imports rewritten] [2msrc/components/PaymentForm.tsx[22m[2m[22m
+2025-11-01T08:38:02.728Z vite:transform [33m23.71ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.730Z vite:time [33m27.87ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.734Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.734Z vite:time [32m1.02ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.737Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.737Z vite:time [32m0.88ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.739Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.740Z vite:time [32m0.92ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.743Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.744Z vite:time [32m1.35ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.747Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.747Z vite:time [32m0.98ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.750Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.750Z vite:time [32m1.20ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.753Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.754Z vite:time [32m1.05ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.757Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:02.758Z vite:time [32m1.21ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.921Z vite:hmr [file change] [2msrc/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.923Z vite:hmr (ssr) [no modules matched] [2msrc/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.935Z vite:load [32m2.07ms[39m [fs] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.951Z vite:cache [memory] [2m/@react-refresh[22m
+2025-11-01T08:38:16.952Z vite:cache [memory] [2m/src/components/ui/button.tsx[22m
+2025-11-01T08:38:16.953Z vite:cache [memory] [2m/src/components/ui/input.tsx[22m
+2025-11-01T08:38:16.953Z vite:cache [memory] [2m/src/components/ui/label.tsx[22m
+2025-11-01T08:38:16.953Z vite:cache [memory] [2m/src/components/ui/textarea.tsx[22m
+2025-11-01T08:38:16.954Z vite:cache [memory] [2m/src/components/ui/card.tsx[22m
+2025-11-01T08:38:16.954Z vite:cache [memory] [2m/src/contexts/CartContext.tsx[22m
+2025-11-01T08:38:16.954Z vite:import-analysis /node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe needs interop
+2025-11-01T08:38:16.955Z vite:import-analysis /node_modules/.vite/deps/react.js?v=8264e7fe needs interop
+2025-11-01T08:38:16.955Z vite:cache [memory] [2m/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=8264e7fe[22m
+2025-11-01T08:38:16.956Z vite:cache [memory] [2m/node_modules/.vite/deps/react.js?v=8264e7fe[22m
+2025-11-01T08:38:16.956Z vite:cache [memory] [2m/node_modules/.vite/deps/lucide-react.js?v=8264e7fe[22m
+2025-11-01T08:38:16.957Z vite:hmr [self-accepts] [2msrc/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.957Z vite:import-analysis [33m10.97ms[39m [2m[10 imports rewritten] [2msrc/components/PaymentForm.tsx[22m[2m[22m
+2025-11-01T08:38:16.958Z vite:transform [33m22.03ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.959Z vite:time [33m26.48ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.963Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.964Z vite:time [32m1.07ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.967Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.967Z vite:time [32m0.87ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.969Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.970Z vite:time [32m0.91ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.972Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.972Z vite:time [32m0.85ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.974Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.975Z vite:time [32m0.86ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.977Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.977Z vite:time [32m0.91ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.981Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.982Z vite:time [32m1.35ms[39m [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.984Z vite:cache [memory] [2m/src/components/PaymentForm.tsx[22m
+2025-11-01T08:38:16.985Z vite:time [32m0.81ms[39m [2m/src/components/PaymentForm.tsx[22m

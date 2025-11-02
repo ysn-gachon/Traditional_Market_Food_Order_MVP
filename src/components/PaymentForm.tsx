@@ -49,7 +49,33 @@ export function PaymentForm({ onBack }: PaymentFormProps) {
         body: JSON.stringify(payload)
       });
 
-      const data = await resp.json();
+      // Don't assume the response is JSON (some server errors/pages may return HTML).
+      const contentType = resp.headers.get('content-type') || '';
+      let data: any = null;
+      if (contentType.includes('application/json')) {
+        try {
+          data = await resp.json();
+        } catch (parseErr) {
+          // Malformed JSON from server
+          const txt = await resp.text();
+          setErrorMessage(`서버 응답을 파싱하지 못했습니다: ${txt.slice(0, 200)}`);
+          setIsSubmitting(false);
+          return;
+        }
+      } else {
+        // Non-JSON response (HTML or plain text). Surface the text for easier debugging.
+        const txt = await resp.text();
+        if (!resp.ok) {
+          setErrorMessage(`서버 오류: ${txt.slice(0, 200)}`);
+          setIsSubmitting(false);
+          return;
+        }
+        // If it's OK but not JSON, treat as unexpected
+        setErrorMessage(`서버가 예상한 형식(JSON)을 반환하지 않았습니다.`);
+        setIsSubmitting(false);
+        return;
+      }
+
       if (!resp.ok) {
         setErrorMessage(data?.error || '주문 생성에 실패했습니다.');
         setIsSubmitting(false);

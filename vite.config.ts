@@ -3,12 +3,37 @@
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
 
-  export default defineConfig({
-    plugins: [react()],
-  // NOTE: do NOT treat project HTML as assets (this caused index.html to be emitted
-  // as an asset and replaced the root HTML with a JS export string). Keep HTML
-  // as normal files so Vite emits a proper `index.html` in the build output.
-    resolve: {
+  // Use a function config so we can apply different settings for `serve` (dev)
+  // vs `build`. During `vercel dev` the dev server needs HTML handled as an
+  // asset to avoid an import-analysis edge case; during production build we do
+  // not treat project HTML as assets so `dist/index.html` is emitted normally.
+  export default defineConfig(({ command }) => {
+    const isServe = command === 'serve';
+    return {
+    // When running the dev server some environments may attempt to import
+    // the virtual `/@react-refresh` module but the export surface can
+    // mismatch (causing errors like "does not provide an export named
+    // 'injectIntoGlobalHook'"). To be resilient, inject a tiny virtual
+    // module during `serve` that provides the expected exports as no-ops.
+    // This only runs in dev and avoids changing production build behavior.
+    plugins: [
+      // small virtual module to satisfy imports of /@react-refresh in dev
+      ...(isServe
+        ? [{
+          name: 'virtual-react-refresh-fallback',
+          resolveId(id: string) { return id === '/@react-refresh' ? id : null; },
+          load(id: string) {
+            if (id !== '/@react-refresh') return null;
+            return `export function injectIntoGlobalHook() { /* noop */ }
+export function performReactRefresh() { /* noop */ }
+export const register = () => {};`;
+          }
+        }]
+        : []),
+      react(),
+    ],
+      assetsInclude: isServe ? ['**/*.html'] : undefined,
+      resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
         'vaul@1.1.2': 'vaul',
@@ -64,4 +89,5 @@
         ignored: ['**/*.log', '**/vite-*.log']
       }
     },
-  });
+    };
+});
